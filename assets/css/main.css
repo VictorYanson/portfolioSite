@@ -2,11 +2,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 
+/* global colors */
+:root {
+  --color-light-gray: rgb(217, 217, 217);
+  --color-black: rgb(0, 0, 0);
+  --color-black-50: rgba(0, 0, 0, 0.5);
+  --color-black-25: rgba(0, 0, 0, 0.25);
+  --color-white: rgb(255, 255, 255);
+  --color-white-50: rgba(255, 255, 255, 0.5);
+  --color-dark-gray: rgb(38, 38, 38);
+  --color-bright-red: rgb(255, 55, 0);
+  --color-white-30: rgba(255, 255, 255, 0.3);
+  --color-black-10: rgba(0, 0, 0, 0.1);
+  --color-background: rgb(218, 218, 224);
+}
+
+/* global text styles*/
+h1 {
+    font-size: 108px;
+    font-weight: 500;
+}
+
 /* global styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 16px;
   scroll-behavior: smooth;
-  background:rgb(218, 218, 224);
+  background:var(--color-background);
 }
 
 body {
@@ -14,4 +41,17 @@ body {
   color: rgb(0, 0, 0);
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  height: 200vh;
+}
+
+/* selection colors */
+::selection {
+  background-color: var(--color-bright-red);
+  color: var(--color-light-gray);
+}
+
+::-moz-selection {
+  background-color: var(--color-bright-red);
+  color: var(--color-light-gray);
 }
