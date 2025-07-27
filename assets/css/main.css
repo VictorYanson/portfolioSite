@@ -21,6 +21,13 @@
 h1 {
     font-size: 108px;
     font-weight: 500;
+    line-height: 124px;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
 }
 
 /* global styles */
