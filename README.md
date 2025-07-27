@@ -1,75 +1,40 @@
-# Nuxt Minimal Starter
+# 🧑‍💻 My Web Portfolio
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Welcome! This is my personal portfolio built with [Nuxt.js](https://nuxt.com/), where I showcase my work, skills, and passion for web development.
 
-## Setup
+You can view the live site here: [https://yourusername.github.io/your-portfolio](https://yourusername.github.io/your-portfolio)
 
-Make sure to install dependencies:
+---
+
+## ✨ About
+
+This portfolio is a simple and lightweight single-page application built with Nuxt.js. It features a dynamic showcase of my projects, along with a short introduction and ways to get in touch.
+
+I made it to keep learning, to have something visual I can point to, and hopefully to connect with other like-minded people or future collaborators.
+
+---
+
+## 🛠️ Built With
+
+- [Nuxt.js 3](https://nuxt.com/) – for the frontend framework
+- [Tailwind CSS](https://tailwindcss.com/) – for utility-first styling
+- [GitHub Pages](https://pages.github.com/) – for hosting
+
+---
+
+## 📁 Project Setup
 
 ```bash
-# npm
+# install dependencies
 npm install
 
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
-```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
+# start development server
 npm run dev
 
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
+# build for production
 npm run build
 
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
+# preview production build
 npm run preview
 
-# pnpm
-pnpm preview
 
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
