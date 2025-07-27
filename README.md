@@ -18,7 +18,7 @@ I made it to keep learning, to have something visual I can point to, and hopeful
 
 - [Nuxt.js 3](https://nuxt.com/) – for the frontend framework
 - [Tailwind CSS](https://tailwindcss.com/) – for utility-first styling
-- [GitHub Pages](https://pages.github.com/) – for hosting
+- [Vercel](https://vercel.com/) – for hosting
 
 ---
 
