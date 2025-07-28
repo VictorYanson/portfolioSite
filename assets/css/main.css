@@ -20,6 +20,7 @@
   --color-white-30: rgba(255, 255, 255, 0.3);
   --color-black-10: rgba(0, 0, 0, 0.1);
   --color-background: rgb(218, 218, 224);
+  --border-width: -8px;
 }
 
 /* global text styles*/
@@ -65,4 +66,23 @@ body {
 ::-moz-selection {
   background-color: var(--color-bright-red);
   color: var(--color-light-gray);
+}
+
+/* custom classes */
+.pseudo-border {
+  border-radius: 20px;
+  position: relative;
+  box-shadow: 6px 8px 18px 3px rgba(1,1,1,0.18);
+}
+
+.pseudo-border::after{
+  content: '';
+  position: absolute;
+  top: var(--border-width);
+  left: var(--border-width);
+  right: var(--border-width);
+  bottom: var(--border-width);
+  background-color: var(--color-white-50);
+  border-radius: 25px;
+  z-index: -1;
 }
