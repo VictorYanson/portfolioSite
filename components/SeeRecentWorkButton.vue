@@ -10,12 +10,17 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 .circle-container {
-    position: relative;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+    z-index: 10;
     width: 150px;
     height: 150px;
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -27,7 +32,7 @@
 }
 
 .circle-container:hover {
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: rgb(255, 255, 255);
 }
 
 .see-recent-work {
