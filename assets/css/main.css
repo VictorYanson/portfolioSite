@@ -25,9 +25,17 @@
 
 /* global text styles*/
 h1 {
-  font-size: 80px;
+  font-size: 90px;
   font-weight: 500;
   line-height: 115px;
+  letter-spacing: -2px;
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 44px;
+    line-height: 65px;
+  }
 }
 
 p {
@@ -46,7 +54,8 @@ p {
 
 html {
   font-size: 16px;
-  scroll-behavior: smooth;
+  scroll-behavior: auto !important;
+  overscroll-behavior: none;
   background:var(--color-background);
 }
 
@@ -99,8 +108,7 @@ img {
 
 .responsive-content {
   max-width: 1440px;
-  width: 100%;
-  margin: 2.5rem;
+  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
