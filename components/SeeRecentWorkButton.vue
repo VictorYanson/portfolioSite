@@ -3,8 +3,8 @@
         <Icon icon="solar:folder-bold" height="50" width="50"/>
         <div class="see-recent-work absolute rotate-12 left-3 -top-16 w-40 h-12 bg-black flex items-center justify-center rounded-full">
             <div class="relative flex justify-center">
-                <p class="text-white">See Recent Work</p>
-                <div class="absolute h-5 w-5 bg-black rotate-45 -bottom-4"></div>
+                <p class="text-white z-10">See Recent Work</p>
+                <div class="absolute h-5 w-5 bg-black rotate-45 -bottom-4 z-0"></div>
             </div>
         </div>
     </div>

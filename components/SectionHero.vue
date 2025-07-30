@@ -1,78 +1,83 @@
-<script setup>
-import { onMounted } from 'vue'
-// import { gsap } from 'gsap'
-
-const stackedImg = useTemplateRef('scroller-child');
-
-onMounted(() => {
-    const clone = stackedImg.value.cloneNode(true);
-    stackedImg.value.parentNode.appendChild(clone);
-
-    const scrollerParent = stackedImg.value.parentNode;
-    const height = scrollerParent.offsetHeight;
-
-    // gsap.to(".left-scroller-child", {
-    // y: -height,
-    // duration: 7,
-    // repeat: -1,
-    // ease: "none"
-    // });
-});
-</script>
-
 <template>
-    <section class="flex justify-center">
-        <div class="pseudo-border relative responsive-content">
-            <SeeRecentWorkButton />
-            <div class="gradient"></div>
-            <div class="inner-container overflow-hidden bg-gray-800 rounded-2xl px-[30px] gap-[25px] flex flex-row justify-evenly items-center h-screen">
-                <div class="scroller-parent w-full flex flex-col gap-[20px] h-full">
-                    <div ref="scroller-child" class="left-scroller-child h-full flex flex-col gap-[20px] w-full">
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/wo0P2ApHuac8yCSOoIU4GYSCkOc.png" alt=""/></div>
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/9nNEv94U4EwW3ZkcswuOBMt2jk.jpg" alt=""/></div>
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/cpbJvQoTTkomFOd8RSNsHF3b8.jpg" alt=""/></div>
+    <div class="responsive-content pt-[180px] pb-[75px] flex-col gap-y-8">
+        <div class="flex flex-row rounded-[100px] items-center bg-white pr-4 pl-3 py-2 gap-x-2">
+            <Icon icon="icon-park-outline:dot" style="color: #0cb300;"/>
+            <p class="text-black">Booking Open — 2 Spots Left</p>
+        </div>
+        <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[870px] break-words">
+            <h1>Unlimited</h1>
+            <div class="hero-image-container -rotate-2">
+                <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
+            </div>
+            <h1 class="text-[#616160]">Design</h1>
+            <h1 class="text-[#616160]">for</h1>
+            <div class="hero-image-container rotate-2">
+                <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
+            </div>
+            <h1>Solid</h1>
+            <h1>Startups</h1>
+        </div>
+        <div class="flex justify-center items-center w-full max-w-[350px]">
+            <p class="text-center">
+                We help startups and brands create beautiful, functional products — fast and hassle-free.
+            </p>
+        </div>
+        <div class="flex flex-row items-center justify-center gap-x-6">
+            <MainButton text="Choose your plan" link="#"/>
+            <div class="flex flex-col">
+                <div class="flex flex-row items-center ml-[8px]">
+                    <div class="client-img-container">
+                        <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                    </div>
+                    <div class="client-img-container">
+                        <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                    </div>
+                    <div class="client-img-container">
+                        <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                    </div>
+                    <div class="client-img-container">
+                        <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                    </div>
+                    <div class="client-img-container">
+                        <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
                     </div>
                 </div>
-                <div class="w-full flex flex-col gap-[20px] h-full hidden md:flex">
-                    <div class="left-scroller-child h-full flex flex-col gap-[20px] w-full">
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/J4Ox47KYv4g8Lb2C0PXNkjDaA.jpg" alt=""/></div>
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/TWgBR6dpy8VfcVcGIy2oyBYzyY.jpg" alt=""/></div>
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/cpbJvQoTTkomFOd8RSNsHF3b8.jpg" alt=""/></div>
-                    </div>
-                </div>
+                <p class="text-[12px]">Trusted by Leaders</p>
             </div>
         </div>
-    </section>
+    </div>
 </template>
 
 <style scoped>
-.work-image-container {
-    width: 100%;
-    height: 60%; 
+.client-img-container {
+    width: 31px;
+    height: 31px;
+    border-radius: 100%;
+    overflow: hidden;
+    border: solid 2px var(--color-white);
+    margin-left: -9px;
 }
 
-.work-image-container img {
-    display: block;
+.hero-image-container {
     width: 100%;
     height: 100%;
-    border-radius: inherit;
-    border-radius: 15px; 
-    object-position: center center;
-    object-fit: cover;
+    max-width: 130px;
+    max-height: 110px;
+    overflow: hidden;
+    border-radius: 30px;
+    border: solid 3px var(--color-black);
+    box-shadow: .5652735987142659px .5652735987142659px .7994175897531614px -.7083333333333333px #00000080,1.4452495242585428px 1.4452495242585428px 2.0438914782196944px -1.4166666666666665px #0000007a,2.8974073717254214px 2.8974073717254214px 4.097552800813874px -2.125px #00000075,5.492479927784297px 5.492479927784297px 7.76753960493455px -2.833333333333333px #00000069,10.917409129219594px 10.917409129219594px 15.439548056518191px -3.541666666666667px #00000052,24px 24px 33.94112549695428px -4.25px #00000017;
 }
 
-.gradient {
-    background: linear-gradient(180deg,rgb(31, 41, 55) 0%,rgba(31, 41, 55,0) 100%);
-    border-radius: inherit;
-    flex: none;
-    z-index: 5;
-    gap: 10px;
-    height: 75%;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1;
+@media (max-width: 767px) {
+  .hero-image-container {
+    max-width: 86px;
+    max-height: 60px;
+    border-radius: 20px;
+  }
+
+  .hero-heading {
+    gap: 12px;
+  }
 }
 </style>
