@@ -3,4 +3,5 @@
   <SectionHero />
   <SectionIntro />
   <SectionHello />
+  <SectionProces />
 </template>

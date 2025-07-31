@@ -2,11 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
 
-/* tailwind config */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
 /* global colors */
 :root {
   --color-light-gray: rgb(217, 217, 217);
@@ -32,13 +27,23 @@ h1 {
 }
 
 h2 {
-  
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: var(--color-black);
+  text-align: center;
 }
 
 @media (max-width: 767px) {
   h1 {
     font-size: 48px;
     line-height: 50px;
+  }
+
+  h2 {
+    font-size: 30px;
+    line-height: 45px;
   }
 }
 
