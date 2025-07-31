@@ -9,7 +9,7 @@
             <div class="hero-image-container -rotate-2">
                 <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
             </div>
-            <h1 class="text-[#616160]">Design</h1>
+            <h1 class="text-[#616160]">Designs</h1>
             <h1 class="text-[#616160]">for</h1>
             <div class="hero-image-container rotate-2">
                 <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
