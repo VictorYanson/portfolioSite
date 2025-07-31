@@ -1,5 +1,5 @@
 <template>
-    <div class="responsive-content relative flex-col pt-48 pb-48 gap-y-10">
+    <div class="responsive-content relative flex-col pt-[180px] pb-48 gap-y-10">
         <h3 class="italic-heading">Hello!</h3>
         <ServicePill class="p1" style="left: 25px; top: 250px; transform: rotate(2deg);" text="Design Systems" bgColor="rgb(255, 94, 0)" icon="tabler:layout-grid-filled" iconColor="rgb(255, 243, 194)" />
         <ServicePill class="p2" style="left: 25px; top: 350px; transform: rotate(1deg);" text="UX/UI" bgColor="rgb(71, 71, 71)" icon="lucide:app-window-mac" iconColor="rgb(186, 255, 208)" />
@@ -42,29 +42,35 @@
   }
   
   .p1 {
-    top: 470px !important;
+    top: 490px !important;
+    left: 15px !important;
   }
 
   .p2 {
-    top: 550px !important;
+    top: 570px !important;
+    left: 45px !important;
   }
 
   .p3 {
-    top: 630px !important;
+    top: 650px !important;
+    left: 35px !important;
   }
 
   .p4 {
-    top: 630px !important;
+    top: 650px !important;
     transform: rotate(2deg) !important;
+    right: 35px !important;
   }
 
   .p5 {
-    top: 550px !important;
+    top: 570px !important;
+    right: 35px !important;
   }
 
   .p6 {
-    top: 470px !important;
+    top: 490px !important;
     transform: rotate(-2deg) !important;
+    right: 20px !important;
   }
 }
 
