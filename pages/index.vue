@@ -5,4 +5,5 @@
   <SectionHello />
   <SectionProces />
   <SectionTestimonial />
+  <SectionCaseStudies />
 </template>
