@@ -4,4 +4,5 @@
   <SectionIntro />
   <SectionHello />
   <SectionProces />
+  <SectionTestimonial />
 </template>

@@ -1,15 +1,15 @@
 <template>
-    <div class="framer-19638bs">
-        <div class="framer-1q5tj4x" style="transform: skewX(45deg);"></div>
-        <div class="framer-113bvzp" style="transform: skewX(45deg);"></div>
-        <div class="framer-1h392ap" style="transform: skewX(45deg);"></div>
-        <div class="framer-51qstn" style="transform: skewX(45deg);"></div>
-        <div class="framer-1lq1g3k" style="transform: skewX(45deg);"></div>
-    </div>
+    <div class="ray-19638bs">
+        <div class="ray-1q5tj4x" style="transform: skewX(45deg);"></div>
+        <div class="ray-113bvzp" style="transform: skewX(45deg);"></div>
+        <div class="ray-1h392ap" style="transform: skewX(45deg);"></div>
+        <div class="ray-51qstn" style="transform: skewX(45deg);"></div>
+        <div class="ray-1lq1g3k" style="transform: skewX(45deg);"></div>
+    </div>  
 </template>
 
 <style scoped>
-.framer-19638bs {
+.ray-19638bs {
     background: linear-gradient(225deg,#ffffff 0%,rgb(219, 219, 219) 100%);
     flex: none;
     gap: 10px;
@@ -24,7 +24,7 @@
     z-index: -1;
 }
 
-.framer-1q5tj4x {
+.ray-1q5tj4x {
     background: linear-gradient(180deg,#fff 0% 83.93442622950819%,#fff0);
     flex: none;
     height: 1269px;
@@ -37,7 +37,7 @@
     width: 591px;
 }
 
-.framer-113bvzp {
+.ray-113bvzp {
     background: linear-gradient(180deg,#fff 0% 83.93442622950819%,#fff0);
     flex: none;
     height: 1269px;
@@ -50,7 +50,7 @@
     width: 582px;
 }
 
-.framer-1h392ap {
+.ray-1h392ap {
     background: linear-gradient(180deg,#fff 0% 67%,#fff0);
     flex: none;
     height: 1269px;
@@ -63,7 +63,7 @@
     width: 441px;
 }
 
-.framer-51qstn {
+.ray-51qstn {
     background: linear-gradient(180deg,#fff 0% 83.93442622950819%,#fff0);
     flex: none;
     height: 1269px;
@@ -76,7 +76,7 @@
     width: 684px;
 }
 
-.framer-1lq1g3k {
+.ray-1lq1g3k {
     background: linear-gradient(180deg,#fff 0% 83.93442622950819%,#fff0);
     flex: none;
     height: 1269px;
