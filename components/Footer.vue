@@ -1,5 +1,5 @@
 <template>
-    <div class="h-[97vh] w-[97vw] rounded-[25px] flex flex-col justify-center items-center relative p-16 m-3 bg-black overflow-hidden z-[-20]">
+    <div class="h-[97vh] w-[97vw] rounded-[25px] flex flex-col justify-center items-center relative p-16 m-3 bg-black overflow-hidden">
         <div class="rays-container">
             <div class="ray-19638bs"></div>
             <div class="ray-1q5tj4x"></div>
@@ -24,9 +24,9 @@
             <p class="text-white text-sm py-3 border-y border-white">© Hanzo Studio, 2025</p>
             <div class="flex flex-row items-center gap-4">
                 <ComponentSocialLogo />
-                <ComponentSocialLogo icon="akar-icons:linkedin-v2-fill" />
-                <ComponentSocialLogo icon="cuida:github-logo-outline"/>
-                <ComponentSocialLogo icon="fe:instagram"/>
+                <ComponentSocialLogo link="https://www.linkedin.com/in/victor-yanson-a49940211/" icon="akar-icons:linkedin-v2-fill" />
+                <ComponentSocialLogo link="https://github.com/VictorYanson" icon="cuida:github-logo-outline"/>
+                <ComponentSocialLogo link="" icon="fe:instagram"/>
             </div>
         </div>
     </div>

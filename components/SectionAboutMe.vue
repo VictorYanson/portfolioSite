@@ -8,7 +8,7 @@
             <div class="flex flex-col md:h-[500px] md:flex-row items-center gap-16">
                 <div class="flex flex-col h-full justify-between md:w-1/2 gap-y-8">
                     <div class="pseudo-border rotate-[-2deg] w-full aspect-[4/3]">
-                        <img style="border-radius: inherit;" src="https://framerusercontent.com/images/zRVCa2eOgJIf1mJK5PYcBLrYI.png?scale-down-to=1024" alt="">
+                        <img class="aspect-[4/3]"  style="border-radius: inherit; object-position: 90%;" loading="lazy" src="../assets/media/portrait_2.jpg" alt="">
                     </div>
                     <div class="flex flex-row justify-between items-end">
                         <div class="flex flex-row gap-x-3">
@@ -30,7 +30,7 @@
                 </div>
                 <div class="flex flex-col h-full justify-between md:w-1/2 gap-y-12">
                     <div class="flex flex-row justify-between w-full items-start">
-                        <p class="md:w-4/5 w-full text-black text-lg text-light leading-relaxed">Joris van Dijk is a Dutch designer known for his minimalist, expressive digital work. He helps startups and studios create clean interfaces and strong branding. Based in Utrecht, he blends function with emotion — and often spends his free time cycling or exploring generative art.</p>
+                        <p class="md:w-4/5 w-full text-black text-lg text-light leading-relaxed">Victor Yanson is a Dutch designer known for his minimalist, expressive digital work. He helps startups and studios create clean interfaces and strong branding. Based in Utrecht, he blends function with emotion — and often spends his free time cycling or exploring generative art.</p>
                         <Icon class="social-icon md:block hidden" width="13" style="color: var(--color-bright-red);" icon="akar-icons:face-happy" />
                     </div>
                     <div class="flex flex-col w-full border-l border-[#bfbfbf] md:pl-12 pl-6">
