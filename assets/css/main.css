@@ -17,6 +17,13 @@
   --color-background: rgb(218, 218, 224);
   --border-width: -8px;
   --italic-heading-color: rgb(124, 124, 124);
+  /* primevue */
+  --p-accordion-panel-border-width: 0px;
+  --p-accordion-header-border-width: 0px;
+  --p-accordion-header-first-border-width: 0px;
+  --p-accordion-content-border-width: 0px;
+  --p-accordion-transition-duration: 0.3s ease-out;
+
 }
 
 /* global text styles*/

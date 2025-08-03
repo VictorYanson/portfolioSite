@@ -1,3 +1,12 @@
+<script setup>
+
+import Accordion from 'primevue/accordion';
+import AccordionPanel from 'primevue/accordionpanel';
+import AccordionHeader from 'primevue/accordionheader';
+import AccordionContent from 'primevue/accordioncontent';
+
+</script>
+
 <template>
     <section class="flex justify-center">
         <div class="responsive-content flex-col gap-14 py-36 xl:px-0 px-6">

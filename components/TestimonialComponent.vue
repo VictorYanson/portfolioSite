@@ -28,11 +28,11 @@ const props = defineProps({
         </div>
         <div class="flex flex-row items-center gap-x-4">
             <div class="aspect-square w-16 rounded-full overflow-hidden">
-                <img :src="imgLink" alt="">
+              <img :src="imgLink" alt="">
             </div>
             <div class="flex flex-col gap-y-1 items-start">
-                <p class="text-black text-base">{{ name }}</p>
-                <p class="text-gray-400 text-base">{{ position }}</p>
+              <p class="text-black text-base">{{ name }}</p>
+              <p class="text-gray-400 text-base">{{ position }}</p>
             </div>
         </div>
     </div>

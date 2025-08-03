@@ -1,0 +1,70 @@
+<script setup>
+import Accordion from 'primevue/accordion';
+import AccordionPanel from 'primevue/accordionpanel';
+import AccordionHeader from 'primevue/accordionheader';
+import AccordionContent from 'primevue/accordioncontent';
+</script>
+
+<template>
+    <section class="flex justify-center mb-48">
+        <div class="responsive-content w-full flex flex-col items-center">
+            <div class="flex flex-col items-center gap-y-2 py-12">
+                <h3 class="italic-heading">FAQ</h3>
+                <h2>Your Questions, Answered</h2>
+            </div>
+            <div class="flex flex-col gap-x-20 md:flex-row w-full">
+                <div class="w-full rotate-[-1.5deg] md:w-2/5">
+                    <div class="flex pseudo-border w-full !bg-gray-100 flex-col gap-4 p-10 justify-between h-[300px]">
+                        <div class="flex flex-row gap-6 items-center">
+                            <div class="aspect-square w-20 !rounded-full pseudo-border overflow-hidden">
+                                <img src="https://framerusercontent.com/images/zRVCa2eOgJIf1mJK5PYcBLrYI.png?scale-down-to=1024" alt="">
+                            </div>
+                            <div class="flex flex-col gap-y-1">
+                                <p class="text-black text-xl">Have more questions?</p>
+                                <p class="text-black text-xl">Book a free discovery call</p>
+                            </div>
+                        </div>
+                        <div class="flex flex-col gap-y-4">
+                            <MainButton text="Book a discovery call" />
+                            <p class="self-center">Or, email me at joris@hanzo.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-full md:w-3/5">
+                    <Accordion :value="['0']" multiple class="w-full border-none">
+                        <AccordionPanel value="0">
+                            <AccordionHeader>What's the difference between a subscription and a custom project?</AccordionHeader>
+                            <AccordionContent>
+                                <p class="m-0">
+                                    The subscription is ongoing and flexible — ideal for continuous design needs. Custom projects are one-time, fixed-scope engagements for larger goals like a rebrand or product launch.
+                                </p>
+                            </AccordionContent>
+                        </AccordionPanel>
+                        <AccordionPanel value="1">
+                            <AccordionHeader>How fast is the turnaround?</AccordionHeader>
+                            <AccordionContent>
+                                <p class="m-0">
+                                    Most requests are delivered within 1-2 business days. Larger tasks may take longer, but you'll always be kept in the loop.
+                                </p>
+                            </AccordionContent>
+                        </AccordionPanel>
+                        <AccordionPanel value="2">
+                            <AccordionHeader>How many requests can I make?</AccordionHeader>
+                            <AccordionContent>
+                                <p class="m-0">
+                                    As many as you like — with a subscription, you can queue unlimited requests, and they'll be handled one at a time in priority order.
+                                </p>
+                            </AccordionContent>
+                        </AccordionPanel>
+                    </Accordion>
+                </div>
+            </div>
+        </div>
+    </section>
+</template>
+
+<style scoped>
+.p-accordionheader{
+    font-size: 24px;
+}
+</style>
