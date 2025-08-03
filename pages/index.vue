@@ -6,4 +6,5 @@
   <SectionProces />
   <SectionTestimonial />
   <SectionCaseStudies />
+  <SectionAboutMe />
 </template>
