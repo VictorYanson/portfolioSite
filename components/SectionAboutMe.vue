@@ -5,8 +5,8 @@
                 <h3 class="italic-heading">About Me</h3>
                 <h2 >Recent Case Studies</h2>
             </div>
-            <div class="flex flex-col h-[500px] md:flex-row items-center gap-16">
-                <div class="flex flex-col md:w-1/2 gap-y-8">
+            <div class="flex flex-col md:h-[500px] md:flex-row items-center gap-16">
+                <div class="flex flex-col h-full justify-between md:w-1/2 gap-y-8">
                     <div class="pseudo-border rotate-[-2deg] w-full aspect-[4/3]">
                         <img style="border-radius: inherit;" src="https://framerusercontent.com/images/zRVCa2eOgJIf1mJK5PYcBLrYI.png?scale-down-to=1024" alt="">
                     </div>
