@@ -1,51 +1,53 @@
 <template>
-    <div class="responsive-content pt-[180px] pb-[75px] flex-col gap-y-8">
-        <div class="flex flex-row rounded-[100px] items-center bg-white pr-4 pl-3 py-2 gap-x-2">
-            <Icon icon="icon-park-outline:dot" style="color: #0cb300;"/>
-            <p class="text-black">Booking Open — 2 Spots Left</p>
-        </div>
-        <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[870px] break-words">
-            <h1>Unlimited</h1>
-            <div class="hero-image-container -rotate-2">
-                <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
+    <section class="flex justify-center">
+        <div class="responsive-content pt-[180px] pb-[75px] flex-col gap-y-8">
+            <div class="flex flex-row rounded-[100px] items-center bg-white pr-4 pl-3 py-2 gap-x-2">
+                <Icon icon="icon-park-outline:dot" style="color: #0cb300;"/>
+                <p class="text-black">Booking Open — 2 Spots Left</p>
             </div>
-            <h1 class="text-[#616160]">Designs</h1>
-            <h1 class="text-[#616160]">for</h1>
-            <div class="hero-image-container rotate-2">
-                <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
-            </div>
-            <h1>Solid</h1>
-            <h1>Startups</h1>
-        </div>
-        <div class="flex justify-center items-center w-full max-w-[350px]">
-            <p class="text-center">
-                We help startups and brands create beautiful, functional products — fast and hassle-free.
-            </p>
-        </div>
-        <div class="flex flex-row items-center justify-center gap-x-6">
-            <MainButton text="Choose your plan" link="#"/>
-            <div class="flex flex-col">
-                <div class="flex flex-row items-center ml-[8px]">
-                    <div class="client-img-container">
-                        <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
-                    </div>
-                    <div class="client-img-container">
-                        <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
-                    </div>
-                    <div class="client-img-container">
-                        <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
-                    </div>
-                    <div class="client-img-container">
-                        <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
-                    </div>
-                    <div class="client-img-container">
-                        <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
-                    </div>
+            <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[870px] break-words">
+                <h1>Unlimited</h1>
+                <div class="hero-image-container -rotate-2">
+                    <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
                 </div>
-                <p class="text-[12px]">Trusted by Leaders</p>
+                <h1 class="text-[#616160]">Designs</h1>
+                <h1 class="text-[#616160]">for</h1>
+                <div class="hero-image-container rotate-2">
+                    <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
+                </div>
+                <h1>Solid</h1>
+                <h1>Startups</h1>
+            </div>
+            <div class="flex justify-center items-center w-full max-w-[350px]">
+                <p class="text-center">
+                    We help startups and brands create beautiful, functional products — fast and hassle-free.
+                </p>
+            </div>
+            <div class="flex flex-row items-center justify-center gap-x-6">
+                <MainButton text="Choose your plan" link="#"/>
+                <div class="flex flex-col">
+                    <div class="flex flex-row items-center ml-[8px]">
+                        <div class="client-img-container">
+                            <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                        </div>
+                        <div class="client-img-container">
+                            <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                        </div>
+                        <div class="client-img-container">
+                            <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                        </div>
+                        <div class="client-img-container">
+                            <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                        </div>
+                        <div class="client-img-container">
+                            <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                        </div>
+                    </div>
+                    <p class="text-[12px]">Trusted by Leaders</p>
+                </div>
             </div>
         </div>
-    </div>
+    </section>
 </template>
 
 <style scoped>
