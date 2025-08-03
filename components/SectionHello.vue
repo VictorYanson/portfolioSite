@@ -1,32 +1,33 @@
 <template>
     <div class="responsive-content relative flex-col pt-[180px] pb-48 gap-y-10">
-        <h3 class="italic-heading">Hello!</h3>
-        <ServicePill class="p1" style="left: 25px; top: 250px; transform: rotate(2deg);" text="Design Systems" bgColor="rgb(255, 94, 0)" icon="tabler:layout-grid-filled" iconColor="rgb(255, 243, 194)" />
-        <ServicePill class="p2" style="left: 25px; top: 350px; transform: rotate(1deg);" text="UX/UI" bgColor="rgb(71, 71, 71)" icon="lucide:app-window-mac" iconColor="rgb(186, 255, 208)" />
-        <ServicePill class="p3" style="left: 25px; top: 450px; transform: rotate(-2deg);" text="Research" bgColor="rgb(5, 169, 255)" icon="ri:search-2-line" iconColor="rgb(248, 255, 191)" />
-        <ServicePill class="p4" style="right: 25px; top: 250px; transform: rotate(-3deg);" text="Animation" bgColor="rgb(82, 255, 105)" icon="hugeicons:ease-curve-control-points" iconColor="rgb(50, 36, 255)" />
-        <ServicePill class="p5" style="right: 25px; top: 350px; transform: rotate(-1deg);" text="Prototyping" bgColor="rgb(255, 69, 171)" icon="hugeicons:source-code" iconColor="rgb(201, 255, 251)" />
-        <ServicePill class="p6" style="right: 25px; top: 450px; transform: rotate(3deg);" text="Strategy" bgColor="rgb(255, 213, 0)" icon="hugeicons:strategy" iconColor="rgb(102, 0, 128)" />
-        <div class="intro-paragraph">
-            <p>We help startups and enterprise to establish an emotional connection between their products and happy engaged customers</p>
-        </div>
+      <div class="bg-rays"></div>
+      <h3 class="italic-heading">Hello!</h3>
+      <ServicePill class="p1" style="left: 25px; top: 250px; transform: rotate(2deg);" text="Design Systems" bgColor="rgb(255, 94, 0)" icon="tabler:layout-grid-filled" iconColor="rgb(255, 243, 194)" />
+      <ServicePill class="p2" style="left: 25px; top: 350px; transform: rotate(1deg);" text="UX/UI" bgColor="rgb(71, 71, 71)" icon="lucide:app-window-mac" iconColor="rgb(186, 255, 208)" />
+      <ServicePill class="p3" style="left: 25px; top: 450px; transform: rotate(-2deg);" text="Research" bgColor="rgb(5, 169, 255)" icon="ri:search-2-line" iconColor="rgb(248, 255, 191)" />
+      <ServicePill class="p4" style="right: 25px; top: 250px; transform: rotate(-3deg);" text="Animation" bgColor="rgb(82, 255, 105)" icon="hugeicons:ease-curve-control-points" iconColor="rgb(50, 36, 255)" />
+      <ServicePill class="p5" style="right: 25px; top: 350px; transform: rotate(-1deg);" text="Prototyping" bgColor="rgb(255, 69, 171)" icon="hugeicons:source-code" iconColor="rgb(201, 255, 251)" />
+      <ServicePill class="p6" style="right: 25px; top: 450px; transform: rotate(3deg);" text="Strategy" bgColor="rgb(255, 213, 0)" icon="hugeicons:strategy" iconColor="rgb(102, 0, 128)" />
+      <div class="intro-paragraph">
+          <p>We help startups and enterprise to establish an emotional connection between their products and happy engaged customers</p>
+      </div>
     </div>
 </template>
 
 <style scoped>
 .intro-paragraph p {
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.4em;
-    color: var(--color-black);
-    text-align: center;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4em;
+  color: var(--color-black);
+  text-align: center;
 }
 
 .intro-paragraph {
-    width: 100%;
-    max-width: 800px;
-    position: relative;
+  width: 100%;
+  max-width: 800px;
+  position: relative;
 }
 
 @media (max-width: 767px) {
@@ -74,4 +75,33 @@
   }
 }
 
+.bg-rays {
+  background: linear-gradient(
+    45deg,
+    #ffffff 0%,
+    rgb(255, 255, 255) 10.492552236961671%,
+    rgb(255, 255, 255) 20.854762210110156%,
+    rgba(255, 255, 255, .5) 28.904700423212677%,
+    rgb(217, 217, 217) 36.8607922063697%,
+    rgb(217, 217, 217) 46.662530445121476%,
+    rgba(255, 255, 255, .5) 54.232809127391455%,
+    rgb(217, 217, 217) 59.631585694533726%,
+    rgb(217, 217, 217) 63.429759262050034%,
+    rgba(255, 255, 255, .5) 67.32177925951184%,
+    rgb(255, 255, 255) 72.91867606765015%,
+    rgb(217, 217, 217) 76.11988206690206%,
+    rgb(255, 255, 255) 80.81220356417685%,
+    rgb(217, 217, 217) 84.7224714785725%,
+    rgb(217, 217, 217) 89.80581976728685%,
+    rgb(217, 217, 217) 100%
+  );
+  flex: none;
+  inset: 0;
+  mask: radial-gradient(50% 50% at 50% 50%, #000000 0%, rgba(0,0,0,0) 100%) add;
+  overflow: hidden;
+  position: absolute;
+  z-index: 0;
+  height: 100%;
+  width: 100%;
+}
 </style>
