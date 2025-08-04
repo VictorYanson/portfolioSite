@@ -22,8 +22,11 @@
   --p-accordion-header-border-width: 0px;
   --p-accordion-header-first-border-width: 0px;
   --p-accordion-content-border-width: 0px;
-  --p-accordion-transition-duration: 0.3s ease-out;
-
+  --p-accordion-header-toggle-icon-color: var(--color-bright-red);
+  --p-accordion-header-toggle-icon-hover-color: var(--color-bright-red);
+  --p-accordion-header-toggle-icon-active-color: var(--color-bright-red);
+  --p-accordion-header-toggle-icon-active-hover-color: var(--color-bright-red);
+  --p-accordion-content-padding: 25px 0 0 0;
 }
 
 /* global text styles*/
@@ -78,6 +81,7 @@ body {
   display: flex;
   width: 100%;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 img {

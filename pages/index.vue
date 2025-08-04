@@ -7,5 +7,6 @@
   <SectionTestimonial />
   <SectionCaseStudies />
   <SectionAboutMe />
+  <SectionPricePlans />
   <SectionFAQ />
 </template>

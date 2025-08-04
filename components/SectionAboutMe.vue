@@ -1,12 +1,3 @@
-<script setup>
-
-import Accordion from 'primevue/accordion';
-import AccordionPanel from 'primevue/accordionpanel';
-import AccordionHeader from 'primevue/accordionheader';
-import AccordionContent from 'primevue/accordioncontent';
-
-</script>
-
 <template>
     <section class="flex justify-center">
         <div class="responsive-content flex-col gap-14 py-36 xl:px-0 px-6">
@@ -21,10 +12,10 @@ import AccordionContent from 'primevue/accordioncontent';
                     </div>
                     <div class="flex flex-row justify-between items-end">
                         <div class="flex flex-row gap-x-3">
-                            <a href="">
+                            <a href="https://www.linkedin.com/in/victor-yanson-a49940211">
                                 <Icon class="social-icon" width="20" icon="hugeicons:linkedin-01" />
                             </a>
-                            <a href="">
+                            <a href="https://github.com/VictorYanson">
                                 <Icon class="social-icon" width="20" icon="hugeicons:github" />
                             </a>
                             <a href="">
@@ -39,14 +30,14 @@ import AccordionContent from 'primevue/accordioncontent';
                 </div>
                 <div class="flex flex-col h-full justify-between md:w-1/2 gap-y-12">
                     <div class="flex flex-row justify-between w-full items-start">
-                        <p class="md:w-4/5 w-full text-black text-lg text-light leading-relaxed">Victor Yanson is a Dutch designer known for his minimalist, expressive digital work. He helps startups and studios create clean interfaces and strong branding. Based in Utrecht, he blends function with emotion — and often spends his free time cycling or exploring generative art.</p>
+                        <p class="md:w-4/5 w-full text-black text-lg text-light leading-relaxed md:text-left text-justify">Victor Yanson is a Dutch designer known for his minimalist, expressive digital work. He helps startups and studios create clean interfaces and strong branding. Based in Utrecht, he blends function with emotion — and often spends his free time cycling or exploring generative art.</p>
                         <Icon class="social-icon md:block hidden" width="13" style="color: var(--color-bright-red);" icon="akar-icons:face-happy" />
                     </div>
                     <div class="flex flex-col w-full border-l border-[#bfbfbf] md:pl-12 pl-6">
                         <ExperienceComponent />
                         <ExperienceComponent />
                         <ExperienceComponent />
-                        <ExperienceComponent class="border-none" />
+                        <ExperienceComponent />
                     </div>
                 </div>
             </div>

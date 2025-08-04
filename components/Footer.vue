@@ -1,5 +1,5 @@
 <template>
-    <div class="h-[97vh] w-[97vw] rounded-[25px] flex flex-col justify-center items-center relative p-16 m-3 bg-black overflow-hidden">
+    <div class="h-[97vh] md:w-[97vw] w-[93vw] rounded-[25px] flex flex-col justify-center items-center relative p-16 m-3 bg-black overflow-hidden">
         <div class="rays-container">
             <div class="ray-19638bs"></div>
             <div class="ray-1q5tj4x"></div>
@@ -14,8 +14,8 @@
             <div class="flex flex-col justify-center items-center gap-y-8">
                 <h3 class="italic-heading">2 spots available</h3>
                 <h1 class="text-white md:text-8xl text-center">Let's Connect</h1>
-                <p class="text-white text-center md:text-lg leading-relaxed pb-4">
-                    Feel free to contact me if having any questions. <br> I'm available for new projects or just for chatting.
+                <p class="text-white text-center md:text-lg leading-relaxed pb-4 max-w-[420px]">
+                    Feel free to contact me if having any questions. I'm available for new projects or just for chatting.
                 </p>
                 <MainButton text="Book a free intro call" link="#"/>
             </div>
@@ -23,10 +23,10 @@
         <div class="flex w-full flex-col md:flex-row items-center justify-between gap-14 px-5">
             <p class="text-white text-sm py-3 border-y border-white">© Hanzo Studio, 2025</p>
             <div class="flex flex-row items-center gap-4">
-                <ComponentSocialLogo />
+                <ComponentSocialLogo link="mailto:victor.yanson@outlook.com" />
                 <ComponentSocialLogo link="https://www.linkedin.com/in/victor-yanson-a49940211/" icon="akar-icons:linkedin-v2-fill" />
                 <ComponentSocialLogo link="https://github.com/VictorYanson" icon="cuida:github-logo-outline"/>
-                <ComponentSocialLogo link="" icon="fe:instagram"/>
+                <ComponentSocialLogo icon="fe:instagram"/>
             </div>
         </div>
     </div>

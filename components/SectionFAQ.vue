@@ -7,14 +7,14 @@ import AccordionContent from 'primevue/accordioncontent';
 
 <template>
     <section class="flex justify-center mb-48">
-        <div class="responsive-content w-full flex flex-col items-center">
+        <div class="responsive-content w-full flex flex-col items-center px-6">
             <div class="flex flex-col items-center gap-y-2 py-12">
                 <h3 class="italic-heading">FAQ</h3>
                 <h2>Your Questions, Answered</h2>
             </div>
-            <div class="flex flex-col gap-x-20 md:flex-row w-full">
+            <div class="flex flex-col gap-x-20 gap-y-24 md:flex-row w-full">
                 <div class="w-full rotate-[-1.5deg] md:w-2/5">
-                    <div class="flex pseudo-border w-full !bg-gray-100 flex-col gap-4 p-10 justify-between h-[300px]">
+                    <div class="flex pseudo-border w-full !bg-gray-100 flex-col gap-4 p-[30px] justify-between h-[300px]">
                         <div class="flex flex-row gap-6 items-center">
                             <div class="aspect-square w-20 !rounded-full pseudo-border overflow-hidden">
                                 <img src="https://framerusercontent.com/images/zRVCa2eOgJIf1mJK5PYcBLrYI.png?scale-down-to=1024" alt="">
@@ -24,15 +24,15 @@ import AccordionContent from 'primevue/accordioncontent';
                                 <p class="text-black text-xl">Book a free discovery call</p>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-y-4">
+                        <div class="flex flex-col gap-y-6">
                             <MainButton text="Book a discovery call" />
                             <p class="self-center">Or, email me at joris@hanzo.com</p>
                         </div>
                     </div>
                 </div>
-                <div class="w-full md:w-3/5">
+                <div class="w-full md:w-3/5 px-1 md:p-0">
                     <Accordion :value="['0']" multiple class="w-full border-none">
-                        <AccordionPanel value="0">
+                        <AccordionPanel value="0" class="!border-t !border-[#acacac]">
                             <AccordionHeader>What's the difference between a subscription and a custom project?</AccordionHeader>
                             <AccordionContent>
                                 <p class="m-0">
@@ -56,6 +56,14 @@ import AccordionContent from 'primevue/accordioncontent';
                                 </p>
                             </AccordionContent>
                         </AccordionPanel>
+                        <AccordionPanel value="3">
+                            <AccordionHeader>What types of design do you handle?</AccordionHeader>
+                            <AccordionContent>
+                                <p class="m-0">
+                                    Websites, product UI, landing pages, brand assets, decks, social media visuals — anything digital that needs to look and feel sharp.
+                                </p>
+                            </AccordionContent>
+                        </AccordionPanel>
                     </Accordion>
                 </div>
             </div>
@@ -64,7 +72,23 @@ import AccordionContent from 'primevue/accordioncontent';
 </template>
 
 <style scoped>
-.p-accordionheader{
-    font-size: 24px;
+.p-accordionheader {
+    font-size: 20px;
+    line-height: 34px;
+    align-items: start;
+}
+
+.p-accordioncontent p {
+    font-size: 14px;
+    line-height: 26px;
+}
+
+svg.p-icon.p-accordionheader-toggle-icon {
+    margin: 10px 0 0 300px !important;
+}
+
+.p-accordionpanel {
+    border-bottom: solid 1px #acacac;
+    padding: 30px 0;
 }
 </style>
