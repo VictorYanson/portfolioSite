@@ -71,6 +71,7 @@ html {
   scroll-behavior: auto !important;
   overscroll-behavior: none;
   background:var(--color-background);
+  overflow-x: hidden;
 }
 
 body {

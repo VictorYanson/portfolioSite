@@ -3,7 +3,6 @@ const props = defineProps({
   bodyText: {
     type: String,
     default: 'Joris brings clarity to chaos. His design work is not only beautiful but deeply strategic. He helped us rebrand from the ground up, and our audience response has been incredible.',
-    required: true
   },
   imgLink: {
     type: String,

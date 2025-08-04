@@ -1,8 +1,8 @@
-import PrimeVue from 'primevue/config'
-import { defineNuxtPlugin } from '#app'
+// import PrimeVue from 'primevue/config'
+// import { defineNuxtPlugin } from '#app'
 
-export default defineNuxtPlugin((nuxtApp) => {
-  nuxtApp.vueApp.use(PrimeVue, {
-    unstyled: true
-  })
-})
+// export default defineNuxtPlugin((nuxtApp) => {
+//   nuxtApp.vueApp.use(PrimeVue, {
+//     unstyled: true
+//   })
+// })

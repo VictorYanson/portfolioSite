@@ -55,4 +55,8 @@
     .social-icon:hover {
         color: rgb(56, 56, 56);
     }
+
+    .pseudo-border::after {
+        background-color: rgba(255, 255, 255, 0.4);
+    }
 </style>
