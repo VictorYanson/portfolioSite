@@ -24,9 +24,9 @@ import AccordionContent from 'primevue/accordioncontent';
                                 <p class="text-black text-xl">Book a free discovery call</p>
                             </div>
                         </div>
-                        <div class="flex flex-col gap-y-6">
-                            <MainButton text="Book a discovery call" />
-                            <p class="self-center">Or, email me at joris@hanzo.com</p>
+                        <div class="flex flex-col gap-y-6 items-center">
+                            <MainButton class="button" text="Book a discovery call" />
+                            <p class="self-center">Or, email me at <a style="color: var(--color-bright-red);" href="mailto:victor.yanson@outlook.com">VictorYa@outlook.com</a></p>
                         </div>
                     </div>
                 </div>
@@ -73,9 +73,10 @@ import AccordionContent from 'primevue/accordioncontent';
 
 <style scoped>
 .p-accordionheader {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 34px;
     align-items: start;
+    gap: 250px !important;
 }
 
 .p-accordioncontent p {

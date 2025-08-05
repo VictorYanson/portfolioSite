@@ -7,15 +7,15 @@ const onClick = () => {
 </script>
 
 <template>
-    <section class="flex justify-center">
-        <div class="responsive-content flex-col w-full gap-y-14 pb-48 md:p-0 px-4 relative">
+    <section class="flex justify-center mt-[50px] mb-[150px]">
+        <div class="responsive-content flex-col w-full gap-y-10 md:p-0 px-4 relative">
             <div class="bg-rays"></div>
             <div class="flex flex-col items-center gap-y-2 z-10">
                 <h3 class="italic-heading">Pricing</h3>
                 <h2>Fixed Price, Zero Limits</h2>
             </div>
-            <div class="w-full min-h-[700px] flex flex-col md:flex-row p-14 pseudo-border bg-[#F2F2F2]">
-                <div class="flex flex-col w-1/2 justify-between md:h-full">
+            <div class="w-full min-h-[760px] flex items-center flex-col md:flex-row p-6 md:p-14 gap-12 pseudo-border bg-[#F2F2F2]">
+                <div class="flex flex-col md:w-1/2 md:p-0 p-4 justify-between md:h-full">
                     <div class="flex flex-col gap-10">
                         <div class="slider-container flex flex-row items-center gap-x-4">
                             <p :class="{ 'text-gray-400': isVisible, '!text-black': !isVisible }">Monthly</p>
@@ -42,6 +42,34 @@ const onClick = () => {
                             <p>Booking Open — 2 Spots Left</p>
                         </div>
                         <MainButton class="w-max" text="Book Free Discovery Call" />
+                    </div>
+                </div>
+                <div class="flex flex-col w-full md:w-1/2 justify-between md:h-full rotate-[1deg]">
+                    <div class="h-full w-full flex flex-col rounded-[15px] bg-white py-14 pl-14 pr-12">
+                        <ComponentIncluded :class="{ 'h-auto opacity-1' : isVisible, 'h-0 opacity-0': !isVisible }"
+                            testimonial= "Astrid's minimalist design approach transformed our brand. The simplicity and clarity she brought to our identity made us stand out in a crowded market."
+                            imgLink= "https://framerusercontent.com/images/etglVFVv5e7VnmUVyHsNK3oyIbI.png?scale-down-to=512"
+                            name= "Helena Moreau"
+                            position= "Creative Director at Studio Novo"
+                            benefit1= "Unlimited design requests"
+                            benefit2= "Fast turnaround"
+                            benefit3= "Fixed monthly rate"
+                            benefit4= "Async communication"
+                            benefit5= "Flexible scope"
+                            benefit6= "Pause anytime"
+                        />
+                        <ComponentIncluded :class="{ 'h-0 opacity-0 ' : isVisible, 'h-auto opacity-1': !isVisible }"
+                            testimonial= "Effortless process. Exceptional results. Working with Joris felt like having an in-house designer on speed dial."
+                            imgLink= "https://framerusercontent.com/images/Y3PGv0d0lyAiS8gk3emx3d41fvU.png?scale-down-to=512"
+                            name= "Tom Richter"
+                            position= "Founder & CEO at Corelytics"
+                            benefit1= "Unlimited design requests"
+                            benefit2= "Fast turnaround"
+                            benefit3= "Fixed monthly rate"
+                            benefit4= "Async communication"
+                            benefit5= "Flexible scope"
+                            benefit6= "Pause anytime"
+                        />
                     </div>
                 </div>
             </div>
