@@ -1,4 +1,11 @@
+<!-- TestimonialComponent.vue -->
 <script setup>
+const { GSAP } = useGSAP('.entrance');
+
+onMounted(() => {
+  GSAP();
+});
+
 const props = defineProps({
   bodyText: {
     type: String,
@@ -22,7 +29,7 @@ const props = defineProps({
 <template>
     <div class="flex flex-col gap-y-10 w-full py-14 md:px-14">
         <div class="flex flex-row items-start">
-            <p class="w-4/5 text-black text-lg text-light leading-relaxed">{{ bodyText }}</p>
+            <p class="entrance w-4/5 text-black text-lg text-light leading-relaxed">{{ bodyText }}</p>
             <p class="text-7xl w-1/5 text-gray-400 flex flex-col justify-end items-end">"</p>
         </div>
         <div class="flex flex-row items-center gap-x-4">

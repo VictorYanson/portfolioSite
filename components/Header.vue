@@ -1,4 +1,8 @@
 <script setup>
+import gsap from 'gsap'
+
+let tagets = 
+
 import { ref } from 'vue'
 
 const isOpen = ref(true)
@@ -10,16 +14,18 @@ const toggleAnimation = () => {
 
 <template>
     <header class="top-0 left-0 w-full flex flex-row p-6 md:px-[100px] fixed px-6 justify-between items-center z-[1000]">
-        <div class="rounded-full py-2 px-4 bg-[#ffffffde] w-max border border-gray-100">
-            <h3 class="font-semibold">NullOne Labs</h3>
-        </div>
+        <a href="/">
+            <div class="rounded-full py-2 px-4 bg-[#ffffffde] w-max border border-gray-100">
+                <h3 class="font-semibold">NullOne Labs</h3>
+            </div>
+        </a>
         <button @click="toggleAnimation" class="rounded-full p-3 bg-[#ffffffde] w-max border border-gray-100">
             <Icon v-if="!isOpen" icon="line-md:menu-to-close-transition" height="20" width="20"/>
             <Icon v-if="isOpen" icon="line-md:close-to-menu-transition" height="20" width="20"/>
         </button>
         <nav 
             :class="{'opacity-0': isOpen, 'opacity-100': !isOpen}"
-            class="flex flex-col gap-y-5 border border-gray-100 w-[300px] p-10 absolute top-[80px] right-[7%] bg-white rounded-l-3xl rounded-br-3xl rounded-tr transition-opacity duration-300"
+            class="flex flex-col gap-y-5 border border-gray-100 md:w-[300px] w-[200px] p-10 absolute top-[80px] right-[7.5%] bg-white rounded-l-3xl rounded-br-3xl rounded-tr transition-opacity duration-300"
         >
             <a class="menu-item" href="">
                 <p>Process</p>

@@ -76,7 +76,13 @@ import AccordionContent from 'primevue/accordioncontent';
     font-size: 22px;
     line-height: 34px;
     align-items: start;
-    gap: 250px !important;
+    gap: 250px;
+}
+
+@media (max-width: 767px) {
+    .p-accordionheader {
+        gap: 30px;
+    }
 }
 
 .p-accordioncontent p {
