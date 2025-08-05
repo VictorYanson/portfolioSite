@@ -9,7 +9,7 @@ const props = defineProps({
 
 <template>
     <div class="stack w-max">
-        <button class="main-button flex flex-row justify-center items-center gap-3 z-10">
+        <button class="main-button flex flex-row justify-center w-full items-center gap-3 z-10">
             {{ text }}
             <svg
             xmlns="http://www.w3.org/2000/svg"

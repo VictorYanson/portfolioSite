@@ -25,7 +25,7 @@ import AccordionContent from 'primevue/accordioncontent';
                             </div>
                         </div>
                         <div class="flex flex-col gap-y-6 items-center">
-                            <MainButton class="button" text="Book a discovery call" />
+                            <MainButton class="!w-full" text="Book a discovery call" />
                             <p class="self-center">Or, email me at <a style="color: var(--color-bright-red);" href="mailto:victor.yanson@outlook.com">VictorYa@outlook.com</a></p>
                         </div>
                     </div>

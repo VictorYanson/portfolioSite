@@ -1,5 +1,5 @@
 <template>
-    <div class="h-[97vh] md:w-[97vw] w-[93vw] rounded-[25px] flex flex-col justify-center items-center relative p-16 m-3 bg-black overflow-hidden">
+    <footer class="h-[97vh] md:w-[97vw] w-[93vw] rounded-[25px] flex flex-col justify-center items-center relative p-16 m-3 bg-black overflow-hidden">
         <div class="rays-container">
             <div class="ray-19638bs"></div>
             <div class="ray-1q5tj4x"></div>
@@ -29,7 +29,7 @@
                 <ComponentSocialLogo icon="fe:instagram"/>
             </div>
         </div>
-    </div>
+    </footer>
 </template>
 
 <style scoped>
