@@ -1,10 +1,10 @@
 <!-- TestimonialComponent.vue -->
 <script setup>
-const { GSAP } = useGSAP('.entrance');
+// const { GSAP } = useGSAP('.entrance');
 
-onMounted(() => {
-  GSAP();
-});
+// onMounted(() => {
+//   GSAP();
+// });
 
 const props = defineProps({
   bodyText: {

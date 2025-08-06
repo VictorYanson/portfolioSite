@@ -21,12 +21,12 @@ const props = defineProps({
 </script>
 
 <template>
-    <div class="service-pill w-max pseudo-border flex flex-row items-center gap-x-2 bg-white rounded-full justify-center pl-1 pr-5 py-1 z-10">
-        <div class="icon rounded-full flex justify-center items-center" :style="{'background-color': bgColor}">
-            <Icon :icon="icon" height="17" width="17" :style="{'color': iconColor}"/>
-        </div>
-        <p class="text-black">{{ text }}</p>
+<div class="service-pill w-max pseudo-border flex flex-row items-center gap-x-2 bg-white rounded-full justify-center pl-1 pr-5 py-1 z-10">
+    <div class="icon rounded-full flex justify-center items-center" :style="{'background-color': bgColor}">
+        <Icon :icon="icon" height="17" width="17" :style="{'color': iconColor}"/>
     </div>
+    <p class="text-black">{{ text }}</p>
+</div>
 </template>
 
 <style scoped>

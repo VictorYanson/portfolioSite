@@ -1,9 +1,10 @@
 <script setup>
 import gsap from 'gsap'
-
-let tagets = 
-
 import { ref } from 'vue'
+
+onMounted(() => {
+  gsap.fromTo(".menu-item", { opacity: 0, y: -20 }, { opacity: 1, y: 0, stagger: 0.1 });
+});
 
 const isOpen = ref(true)
 
@@ -16,7 +17,7 @@ const toggleAnimation = () => {
     <header class="top-0 left-0 w-full flex flex-row p-6 md:px-[100px] fixed px-6 justify-between items-center z-[1000]">
         <a href="/">
             <div class="rounded-full py-2 px-4 bg-[#ffffffde] w-max border border-gray-100">
-                <h3 class="font-semibold">NullOne Labs</h3>
+                <h3 class="font-medium">NullOne Labs</h3>
             </div>
         </a>
         <button @click="toggleAnimation" class="rounded-full p-3 bg-[#ffffffde] w-max border border-gray-100">
