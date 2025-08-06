@@ -6,10 +6,10 @@
                 <h2 >Recent Case Studies</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
-                <CaseStudyComponent text="Project 1" link="#" imglink="https://framerusercontent.com/images/aLickQcDkn7JlTftxkq33tHE.jpg" tag1="portfolio" tag2="sidebar" />
-                <CaseStudyComponent text="Project 2" link="#" imglink="https://framerusercontent.com/images/ISAjHKBwJV6BJzD55lhE8XAFBM.jpg" tag1="portfolio" tag2="sidebar" />
-                <CaseStudyComponent text="Project 3" link="#" imglink="https://framerusercontent.com/images/nT9mTBoP2h9YdschdGP72ovRHk.jpg" tag1="portfolio" tag2="sidebar" />
-                <CaseStudyComponent text="Project 4" link="#" imglink="https://framerusercontent.com/images/vzQsCEYy7zN2RmDQcgrizz0O0MI.jpg" tag1="portfolio" tag2="sidebar" />
+                <CaseStudyComponent text="Custom AI Tool" link="#" imglink="https://framerusercontent.com/images/aLickQcDkn7JlTftxkq33tHE.jpg" tag1="AI solution" tag2="Automation" />
+                <CaseStudyComponent text="Full-Stack MVP" link="#" imglink="https://framerusercontent.com/images/ISAjHKBwJV6BJzD55lhE8XAFBM.jpg" tag1="Web Dev" tag2="SaaS" />
+                <CaseStudyComponent text="Mobile App" link="#" imglink="https://framerusercontent.com/images/nT9mTBoP2h9YdschdGP72ovRHk.jpg" tag1="IOS" tag2="Android" />
+                <CaseStudyComponent text="Process Automation" link="#" imglink="https://framerusercontent.com/images/vzQsCEYy7zN2RmDQcgrizz0O0MI.jpg" tag1="Automation" tag2="Scalability" />
             </div>
         </div>
     </section>

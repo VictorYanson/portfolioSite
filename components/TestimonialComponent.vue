@@ -1,4 +1,3 @@
-<!-- TestimonialComponent.vue -->
 <script setup>
 // const { GSAP } = useGSAP('.entrance');
 
@@ -9,7 +8,7 @@
 const props = defineProps({
   bodyText: {
     type: String,
-    default: 'Joris brings clarity to chaos. His design work is not only beautiful but deeply strategic. He helped us rebrand from the ground up, and our audience response has been incredible.',
+    default: 'Victor brings clarity to chaos. His design work is not only beautiful but deeply strategic. He helped us rebrand from the ground up, and our audience response has been incredible.',
   },
   imgLink: {
     type: String,
@@ -37,7 +36,7 @@ const props = defineProps({
               <img :src="imgLink" alt="">
             </div>
             <div class="flex flex-col gap-y-1 items-start">
-              <p class="text-black text-base">{{ name }}</p>
+              <p class="text-black text-[18px]">{{ name }}</p>
               <p class="text-gray-400 text-base">{{ position }}</p>
             </div>
         </div>

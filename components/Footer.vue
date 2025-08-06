@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="flex w-full flex-col md:flex-row items-center justify-between gap-14 px-5">
-            <p class="text-white text-sm py-3 border-y border-white">© Hanzo Studio, 2025</p>
+            <p class="text-white text-sm py-3 border-y border-white">© NullOne Labs, 2025</p>
             <div class="flex flex-row items-center gap-4">
                 <ComponentSocialLogo link="mailto:victor.yanson@outlook.com" />
                 <ComponentSocialLogo link="https://www.linkedin.com/in/victor-yanson-a49940211/" icon="akar-icons:linkedin-v2-fill" />

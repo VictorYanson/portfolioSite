@@ -6,11 +6,11 @@
                 <p class="text-black">Booking Open — 2 Spots Left</p>
             </div>
             <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[870px] break-words">
-                <h1>Unlimited</h1>
+                <h1>Full-Stack</h1>
                 <div class="hero-image-container -rotate-2">
                     <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
                 </div>
-                <h1 class="text-[#616160]">Designs</h1>
+                <h1 class="text-[#616160]">MVPs</h1>
                 <h1 class="text-[#616160]">for</h1>
                 <div class="hero-image-container rotate-2">
                     <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
@@ -18,9 +18,9 @@
                 <h1>Solid</h1>
                 <h1>Startups</h1>
             </div>
-            <div class="flex justify-center items-center w-full max-w-[350px]">
+            <div class="flex justify-center items-center w-full max-w-[370px]">
                 <p class="text-center">
-                    We help startups and brands create beautiful, functional products — fast and hassle-free.
+                    I help non-technical founders turn raw ideas into smart, scalable digital products, fast and business-ready.
                 </p>
             </div>
             <div class="flex flex-row items-center justify-center gap-x-6">

@@ -17,7 +17,7 @@ import AccordionContent from 'primevue/accordioncontent';
                     <div class="flex pseudo-border w-full !bg-gray-100 flex-col gap-4 p-[30px] justify-between h-[300px]">
                         <div class="flex flex-row gap-6 items-center">
                             <div class="aspect-square w-20 !rounded-full pseudo-border overflow-hidden">
-                                <img src="https://framerusercontent.com/images/zRVCa2eOgJIf1mJK5PYcBLrYI.png?scale-down-to=1024" alt="">
+                                <img class="scale-[125%] translate-x-[-5%] translate-y-[-10%] saturate-[0.9]" src="../assets/media/victor_headshot.webp" alt="">
                             </div>
                             <div class="flex flex-col gap-y-1">
                                 <p class="text-black text-xl">Have more questions?</p>
@@ -26,7 +26,7 @@ import AccordionContent from 'primevue/accordioncontent';
                         </div>
                         <div class="flex flex-col gap-y-6 items-center">
                             <MainButton class="!w-full" text="Book a discovery call" />
-                            <p class="self-center">Or, email me at <a style="color: var(--color-bright-red);" href="mailto:victor.yanson@outlook.com">VictorYa@outlook.com</a></p>
+                            <p class="self-center">Or, email me at <a style="color: var(--color-bright-red);" href="mailto:victor.yanson@outlook.com">victor.yanson@outlook.com</a></p>
                         </div>
                     </div>
                 </div>

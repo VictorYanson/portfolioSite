@@ -3,7 +3,7 @@
         <div class="responsive-content flex-col gap-14 py-36 xl:px-0 px-6">
             <div class="flex flex-col items-center gap-y-2">
                 <h3 class="italic-heading">About Me</h3>
-                <h2 >Recent Case Studies</h2>
+                <h2>Your Tech Wingman</h2>
             </div>
             <div class="flex flex-col md:h-[500px] md:flex-row items-center gap-16">
                 <div class="flex flex-col h-full justify-between md:w-1/2 gap-y-8">
@@ -24,20 +24,20 @@
                         </div>
                         <div class="flex flex-col items-end gap-y-2">
                             <p class="text-black text-base leading-none">Victor Yanson</p>
-                            <p class="text-gray-400 leading-none">Hanzo Studio, Founder</p>
+                            <p class="text-gray-400 leading-none">NullOne Labs, Founder</p>
                         </div>
                     </div>
                 </div>
                 <div class="flex flex-col h-full justify-between md:w-1/2 gap-y-12">
                     <div class="flex flex-row justify-between w-full items-start">
-                        <p class="md:w-4/5 w-full text-black text-lg text-light leading-relaxed md:text-left text-justify">Victor Yanson is a Dutch designer known for his minimalist, expressive digital work. He helps startups and studios create clean interfaces and strong branding. Based in Utrecht, he blends function with emotion — and often spends his free time cycling or exploring generative art.</p>
+                        <p class="md:w-4/5 w-full text-black text-lg text-light leading-relaxed md:text-left text-justify">Hi! I’m Victor Yanson, a Dutch business strategist and full-stack developer based in Barcelona. With a background in business administration and a passion for digital innovation, I specialize in web development, marketing tech, and strategic growth. I currently work freelance on various projects and I'm always looking for a new challenge. </p>
                         <Icon class="social-icon md:block hidden" width="13" style="color: var(--color-bright-red);" icon="akar-icons:face-happy" />
                     </div>
                     <div class="flex flex-col w-full border-l border-[#bfbfbf] md:pl-12 pl-6">
-                        <ExperienceComponent />
-                        <ExperienceComponent />
-                        <ExperienceComponent />
-                        <ExperienceComponent />
+                        <ExperienceComponent title="Business Developer" company="TD Synnex" dates="2022 → 2023"/>
+                        <ExperienceComponent title="Administration Dev" company="Chiquita Room" dates="2023 → 2024"/>
+                        <ExperienceComponent title="Workflow Consultant" company="Técnicos365" dates="2024 → 2024"/>
+                        <ExperienceComponent title="Freelance" company="NullOne Labs" dates="2024 → Now"/>
                     </div>
                 </div>
             </div>

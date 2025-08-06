@@ -1,16 +1,26 @@
 <script setup>
-import gsap from 'gsap'
 import { ref } from 'vue'
 
-onMounted(() => {
-  gsap.fromTo(".menu-item", { opacity: 0, y: -20 }, { opacity: 1, y: 0, stagger: 0.1 });
-});
-
-const isOpen = ref(true)
+const isClosed = ref(true)
+const menuRef = ref(null)
 
 const toggleAnimation = () => {
-  isOpen.value = !isOpen.value
+  isClosed.value = !isClosed.value
 }
+
+const handleClickOutside = (event) => {
+  if (!isClosed.value && menuRef.value && !menuRef.value.contains(event.target)) {
+    isClosed.value = true
+  }
+}
+
+onMounted(() => {
+  document.addEventListener('click', handleClickOutside)
+})
+
+onUnmounted(() => {
+  document.removeEventListener('click', handleClickOutside)
+})
 </script>
 
 <template>
@@ -20,13 +30,14 @@ const toggleAnimation = () => {
                 <h3 class="font-medium">NullOne Labs</h3>
             </div>
         </a>
-        <button @click="toggleAnimation" class="rounded-full p-3 bg-[#ffffffde] w-max border border-gray-100">
-            <Icon v-if="!isOpen" icon="line-md:menu-to-close-transition" height="20" width="20"/>
-            <Icon v-if="isOpen" icon="line-md:close-to-menu-transition" height="20" width="20"/>
+        <button @click.stop="toggleAnimation" class="rounded-full p-3 bg-[#ffffffde] w-max border border-gray-100">
+            <Icon v-if="!isClosed" icon="line-md:menu-to-close-transition" height="20" width="20"/>
+            <Icon v-if="isClosed" icon="line-md:close-to-menu-transition" height="20" width="20"/>
         </button>
         <nav 
-            :class="{'opacity-0': isOpen, 'opacity-100': !isOpen}"
-            class="flex flex-col gap-y-5 border border-gray-100 md:w-[300px] w-[200px] p-10 absolute top-[80px] right-[7.5%] bg-white rounded-l-3xl rounded-br-3xl rounded-tr transition-opacity duration-300"
+            ref="menuRef"
+            :class="{'opacity-0 pointer-events-none': isClosed, 'opacity-100': !isClosed}"
+            class="menu flex flex-col gap-y-5 border border-gray-100 md:w-[300px] w-[200px] p-10 absolute top-[80px] right-[7.5%] bg-white rounded-l-3xl rounded-br-3xl rounded-tr transition-opacity duration-300"
         >
             <a class="menu-item" href="">
                 <p>Process</p>
