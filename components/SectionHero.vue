@@ -1,7 +1,29 @@
+<script setup>
+import { onMounted } from 'vue'
+const { $gsap, $SplitText } = useNuxtApp()
+
+onMounted(() => {
+    const splitText = new $SplitText(".hero-heading h1", { type: "chars" })
+
+    $gsap.from(splitText.chars, {
+        duration: 1,
+        y: 30,
+        filter: "blur(20px)",
+        opacity: 0,
+        stagger: 0.05,
+        ease: "power2.out"
+    });
+  
+    $gsap.from(".fade-up", { opacity: 0, y: 100, duration: 1, delay: 1, ease: "power2.out" });
+    $gsap.from(".fade-in", { opacity: 0, delay: 1, ease: "power2.out" });
+    $gsap.from(".hero-image-container", { opacity: 0, y: -50, duration: 2, rotation: -15, ease: "power2.out" });
+})
+</script>
+
 <template>
     <section class="flex justify-center">
         <div class="responsive-content pt-[180px] pb-[75px] flex-col gap-y-8">
-            <div class="flex flex-row rounded-[100px] items-center bg-white pr-4 pl-3 py-2 gap-x-2">
+            <div class="fade-in flex flex-row rounded-[100px] items-center bg-white pr-4 pl-3 py-2 gap-x-2">
                 <Icon icon="icon-park-outline:dot" style="color: #0cb300;"/>
                 <p class="text-black">Booking Open — 2 Spots Left</p>
             </div>
@@ -18,12 +40,12 @@
                 <h1>Solid</h1>
                 <h1>Startups</h1>
             </div>
-            <div class="flex justify-center items-center w-full max-w-[370px]">
+            <div class="fade-in flex justify-center items-center w-full max-w-[370px]">
                 <p class="text-center">
                     I help non-technical founders turn raw ideas into smart, scalable digital products, fast and business-ready.
                 </p>
             </div>
-            <div class="flex flex-row items-center justify-center gap-x-6">
+            <div class="fade-up flex flex-row items-center justify-center gap-x-6">
                 <MainButton text="Choose your plan" link="#"/>
                 <div class="flex flex-col">
                     <div class="flex flex-row items-center ml-[8px]">

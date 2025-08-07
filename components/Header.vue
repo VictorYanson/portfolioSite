@@ -1,5 +1,6 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, onMounted } from 'vue'
+const { $gsap } = useNuxtApp()
 
 const isClosed = ref(true)
 const menuRef = ref(null)
@@ -20,6 +21,10 @@ onMounted(() => {
 
 onUnmounted(() => {
   document.removeEventListener('click', handleClickOutside)
+})
+
+onMounted(() => {
+  $gsap.from("header", { opacity: 0, y: -100, duration: 1, delay: 1, ease: "power2.out" });
 })
 </script>
 

@@ -1,23 +1,36 @@
 <script setup>
-import { onMounted } from 'vue'
-// import { gsap } from 'gsap'
+import { onMounted, onBeforeUnmount } from 'vue'
+const { $gsap } = useNuxtApp()
 
-const stackedImg = useTemplateRef('scroller-child');
+let leftAnimation
+let rightAnimation
 
 onMounted(() => {
-    const clone = stackedImg.value.cloneNode(true);
-    stackedImg.value.parentNode.appendChild(clone);
+  const leftContent = document.querySelector('.left-scroller-child')
+  const rightContent = document.querySelector('.right-scroller-child')
 
-    const scrollerParent = stackedImg.value.parentNode;
-    const height = scrollerParent.offsetHeight;
+  leftContent.innerHTML += leftContent.innerHTML
+  rightContent.innerHTML += rightContent.innerHTML
+  
+  leftAnimation = $gsap.to(leftContent, {
+    y: -leftContent.scrollHeight / 2,
+    duration: 22,
+    ease: "none",
+    repeat: -1
+  })
 
-    // gsap.to(".left-scroller-child", {
-    // y: -height,
-    // duration: 7,
-    // repeat: -1,
-    // ease: "none"
-    // });
-});
+  rightAnimation = $gsap.to(rightContent, {
+    y: -rightContent.scrollHeight / 2,
+    duration: 18,
+    ease: "none",
+    repeat: -1
+  })
+})
+
+onBeforeUnmount(() => {
+  leftAnimation?.kill()
+  rightAnimation?.kill()
+})
 </script>
 
 <template>
@@ -27,14 +40,14 @@ onMounted(() => {
             <div class="gradient"></div>
             <div class="inner-container overflow-hidden bg-[#262626] rounded-2xl px-[30px] gap-[25px] flex flex-row justify-evenly items-center h-screen">
                 <div class="scroller-parent w-full flex flex-col gap-[20px] h-full">
-                    <div ref="scroller-child" class="left-scroller-child h-full flex flex-col gap-[20px] w-full">
+                    <div ref="el" class="left-scroller-child h-full flex flex-col gap-[20px] w-full">
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/wo0P2ApHuac8yCSOoIU4GYSCkOc.png" alt=""/></div>
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/9nNEv94U4EwW3ZkcswuOBMt2jk.jpg" alt=""/></div>
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/cpbJvQoTTkomFOd8RSNsHF3b8.jpg" alt=""/></div>
                     </div>
                 </div>
-                <div class="w-full flex flex-col gap-[20px] h-full hidden md:flex">
-                    <div class="left-scroller-child h-full flex flex-col gap-[20px] w-full">
+                <div class="scroller-parent w-full flex flex-col gap-[20px] h-full hidden md:flex">
+                    <div class="right-scroller-child h-full flex flex-col gap-[20px] w-full">
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/J4Ox47KYv4g8Lb2C0PXNkjDaA.jpg" alt=""/></div>
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/TWgBR6dpy8VfcVcGIy2oyBYzyY.jpg" alt=""/></div>
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/cpbJvQoTTkomFOd8RSNsHF3b8.jpg" alt=""/></div>

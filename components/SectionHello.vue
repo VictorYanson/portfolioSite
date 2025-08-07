@@ -1,3 +1,71 @@
+<script setup>
+import { onMounted } from 'vue'
+const { $gsap, $scrollTrigger, } = useNuxtApp()
+import { SplitText } from 'gsap/SplitText'
+
+onMounted(() => {
+  nextTick (() => {
+    // // Split Text Animation
+    // $gsap.registerPlugin($gsap.SplitText)
+
+    // const split = new SplitText('.intro-paragraph p', {
+    //   type: 'words',
+    //   wordsClass: 'word'
+    // })
+
+    // console.log('word array:', split.words) // TODO: Remove this log after testing
+
+    // const tl = gsap.timeline({
+    //   scrollTrigger: {
+    //     trigger: ".intro-paragraph",
+    //     start: "top 80%",
+    //     end: "bottom 20%",
+    //     scrub: 0.5,
+    //     markers: false
+    //   }
+    // })
+
+		// tl.from(split.words, {
+    //   y: 50,
+    //   opacity: 0,
+    //   duration: 0.8,
+    //   stagger: 0.1,
+    //   ease: "power2.out"
+    // })
+
+    // Service Pill Animation
+    const pills = $gsap.utils.toArray('.service-pill')
+
+    $gsap.from(pills, {
+      x: (i) => {
+        if (i < 3) {
+          return -100
+        } else {
+          return 100
+        }
+      },
+      y: i => {
+        if (i < 3) {
+          return -100 + (i * 100)
+        } else {
+          return -100 + ((i - 3) * 100)
+        }
+      },
+      opacity: 0,
+      duration: 1.5,
+      stagger: 0.15,
+      ease: "power3.out",
+      delay: 0.2,
+      scrollTrigger: {
+        trigger: '.intro-paragraph',
+        start: 'top 80%',
+        markers: false
+      }
+    })
+  });
+})
+</script>
+
 <template>
     <section class="flex justify-center">
       <div class="responsive-content relative flex-col pt-[180px] pb-48 gap-y-10">
@@ -22,7 +90,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: 1.4em;
-  color: var(--color-black);
+  color: var(--color-black-25);
   text-align: center;
 }
 

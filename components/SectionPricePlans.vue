@@ -46,7 +46,7 @@ const onClick = () => {
                 </div>
                 <div class="flex flex-col w-full md:w-1/2 justify-between md:h-full rotate-[1deg]">
                     <div class="h-full w-full flex flex-col rounded-[15px] bg-white py-14 pl-14 pr-12">
-                        <ComponentIncluded :class="{ 'h-auto opacity-1' : isVisible, 'h-0 opacity-0': !isVisible }"
+                        <ComponentIncluded :class="{ 'h-auto opacity-1' : isVisible, 'h-0 opacity-0 pointer-events-none': !isVisible }"
                             testimonial= "Astrid's minimalist design approach transformed our brand. The simplicity and clarity she brought to our identity made us stand out in a crowded market."
                             imgLink= "https://framerusercontent.com/images/etglVFVv5e7VnmUVyHsNK3oyIbI.png?scale-down-to=512"
                             name= "Helena Moreau"
@@ -58,7 +58,7 @@ const onClick = () => {
                             benefit5= "Flexible scope"
                             benefit6= "Pause anytime"
                         />
-                        <ComponentIncluded :class="{ 'h-0 opacity-0 ' : isVisible, 'h-auto opacity-1': !isVisible }"
+                        <ComponentIncluded :class="{ 'h-0 opacity-0 pointer-events-none' : isVisible, 'h-auto opacity-1': !isVisible }"
                             testimonial= "Effortless process. Exceptional results. Working with Joris felt like having an in-house designer on speed dial."
                             imgLink= "https://framerusercontent.com/images/Y3PGv0d0lyAiS8gk3emx3d41fvU.png?scale-down-to=512"
                             name= "Tom Richter"
