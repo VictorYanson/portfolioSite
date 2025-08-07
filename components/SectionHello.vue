@@ -5,33 +5,25 @@ import { SplitText } from 'gsap/SplitText'
 
 onMounted(() => {
   nextTick (() => {
-    // // Split Text Animation
-    // $gsap.registerPlugin($gsap.SplitText)
+    // Split Text Animation
+    const split = new SplitText('.intro-paragraph p', { type: 'words' })
 
-    // const split = new SplitText('.intro-paragraph p', {
-    //   type: 'words',
-    //   wordsClass: 'word'
-    // })
-
-    // console.log('word array:', split.words) // TODO: Remove this log after testing
-
-    // const tl = gsap.timeline({
-    //   scrollTrigger: {
-    //     trigger: ".intro-paragraph",
-    //     start: "top 80%",
-    //     end: "bottom 20%",
-    //     scrub: 0.5,
-    //     markers: false
-    //   }
-    // })
-
-		// tl.from(split.words, {
-    //   y: 50,
-    //   opacity: 0,
-    //   duration: 0.8,
-    //   stagger: 0.1,
-    //   ease: "power2.out"
-    // })
+    const tl = $gsap.timeline({
+      scrollTrigger: {
+        trigger: ".intro-paragraph",
+        start: "top 90%",
+        end: "bottom 40%",
+        scrub: 0.5,
+        markers: false
+      }
+    })
+    
+		tl.from(split.words, {
+        duration: 0.5,
+        opacity: 0.2,
+        stagger: 0.75,
+        ease: "power2.out"
+    });
 
     // Service Pill Animation
     const pills = $gsap.utils.toArray('.service-pill')
@@ -90,7 +82,7 @@ onMounted(() => {
   font-style: normal;
   font-weight: 400;
   line-height: 1.4em;
-  color: var(--color-black-25);
+  color: var(--color-black);
   text-align: center;
 }
 

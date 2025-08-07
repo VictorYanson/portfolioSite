@@ -8,6 +8,9 @@ export default defineNuxtConfig({
       title: 'NullOne Labs',
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon-180x180.png' },
+        { rel: 'apple-touch-icon', sizes: '152x152', href: '/apple-touch-icon-152x152.png' },
+        { rel: 'apple-touch-icon', sizes: '120x120', href: '/apple-touch-icon-120x120.png' }
       ],
     },
     pageTransition: {

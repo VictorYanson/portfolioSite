@@ -42,7 +42,7 @@ onMounted(() => {
         <nav 
             ref="menuRef"
             :class="{'opacity-0 pointer-events-none': isClosed, 'opacity-100': !isClosed}"
-            class="menu flex flex-col gap-y-5 border border-gray-100 md:w-[300px] w-[200px] p-10 absolute top-[80px] right-[7.5%] bg-white rounded-l-3xl rounded-br-3xl rounded-tr transition-opacity duration-300"
+            class="menu flex flex-col gap-y-5 border border-gray-100 md:w-[300px] min-w-[200px] p-10 absolute top-[80px] right-[7.5%] bg-white rounded-l-3xl rounded-br-3xl rounded-tr transition-opacity duration-300"
         >
             <a class="menu-item" href="">
                 <p>Process</p>
@@ -62,6 +62,23 @@ onMounted(() => {
             <a class="menu-item" href="">
                 <p>Contact</p>
             </a>
+            <div class="flex flex-row gap-x-3">
+                <a style="z-index: 1000; cursor: pointer;" href="#">
+                    <div class="social-button-dark rounded-full flex justify-center items-center p-2 border">
+                        <Icon class="icon" icon="meteor-icons:at" width="20" height="20" style="color: black; transition: color 0.3s ease-in-out;" />
+                    </div>
+                </a>
+                <a style="z-index: 1000; cursor: pointer;" href="#">
+                    <div class="social-button-dark rounded-full flex justify-center items-center p-2 border">
+                        <Icon class="icon" icon="cuida:github-logo-outline" width="20" height="20" style="color: black; transition: color 0.3s ease-in-out;" />
+                    </div>
+                </a>
+                <a style="z-index: 1000; cursor: pointer;" href="#">
+                    <div class="social-button-dark rounded-full flex justify-center items-center p-2 border">
+                        <Icon class="icon" icon="akar-icons:linkedin-v2-fill" width="20" height="20" style="color: black; transition: color 0.3s ease-in-out;" />
+                    </div>
+                </a>
+            </div>
         </nav>
     </header>
 </template>
@@ -75,5 +92,18 @@ onMounted(() => {
 
 .menu-item:hover p {
     color: var(--color-bright-red);
+}
+
+.social-button-dark {
+    border-color: rgba(0, 0, 0, 0.5) !important;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-button-dark:hover {
+    border-color: rgb(0, 0, 0, 0.5) !important;
+}
+
+.social-button-dark:hover .icon {
+    color: rgba(0, 0, 0, 0.6) !important;
 }
 </style>

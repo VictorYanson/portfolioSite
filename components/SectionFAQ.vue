@@ -31,7 +31,7 @@ import AccordionContent from 'primevue/accordioncontent';
                     </div>
                 </div>
                 <div class="w-full md:w-3/5 px-1 md:p-0">
-                    <Accordion :value="['0']" multiple class="w-full border-none">
+                    <Accordion :value="['0']" lazy multiple unstyled class="w-full border-none">
                         <AccordionPanel value="0" class="!border-t !border-[#acacac]">
                             <AccordionHeader>What's the difference between a subscription and a custom project?</AccordionHeader>
                             <AccordionContent>
@@ -90,12 +90,15 @@ import AccordionContent from 'primevue/accordioncontent';
     line-height: 26px;
 }
 
-svg.p-icon.p-accordionheader-toggle-icon {
-    margin: 10px 0 0 300px !important;
-}
-
 .p-accordionpanel {
     border-bottom: solid 1px #acacac;
     padding: 30px 0;
+}
+
+:deep(.p-accordion .p-accordionheader button[aria-expanded="false"] .p-accordionheader-toggle-icon) {
+  background-image: url('/icons/plus.svg') !important;
+}
+:deep(.p-accordion .p-accordionheader button[aria-expanded="true"] .p-accordionheader-toggle-icon) {
+  background-image: url('/icons/minus.svg') !important;
 }
 </style>
