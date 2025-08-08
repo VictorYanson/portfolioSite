@@ -39,6 +39,10 @@ const handleClickOutside = (event) => {
   }
 }
 
+const buttonClose = () => {
+  isClosed.value = true
+}
+
 onMounted(() => {
   document.addEventListener('click', handleClickOutside)
 })
@@ -68,19 +72,19 @@ onMounted(() => {
             :class="{'opacity-0 pointer-events-none': isClosed, 'opacity-100': !isClosed}"
             class="menu flex flex-col gap-y-5 border border-gray-100 md:w-[300px] min-w-[200px] p-10 absolute top-[80px] right-[7.5%] bg-white rounded-l-3xl rounded-br-3xl rounded-tr transition-opacity duration-300"
         >
-            <button class="menu-item" @click="scrollTo('process')">
+            <button class="menu-item" @click="scrollTo('process'), buttonClose()">
                 <p>Process</p>
             </button>
-            <button class="menu-item" @click="scrollTo('case-studies')">
+            <button class="menu-item" @click="scrollTo('case-studies'), buttonClose()">
                 <p>Work</p>
             </button>
-            <button class="menu-item" @click="scrollTo('about-me')">
+            <button class="menu-item" @click="scrollTo('about-me'), buttonClose()">
                 <p>About</p>
             </button>
-            <button class="menu-item" @click="scrollTo('pricing')">
+            <button class="menu-item" @click="scrollTo('pricing'), buttonClose()">
                 <p>Pricing</p>
             </button>
-            <button class="menu-item" @click="scrollTo('faq')">
+            <button class="menu-item" @click="scrollTo('faq'), buttonClose()">
                 <p>FAQ</p>
             </button>
             <div class="buttons flex flex-row gap-x-3">
