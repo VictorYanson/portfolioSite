@@ -41,7 +41,7 @@ onBeforeUnmount(() => {
             <div class="inner-container overflow-hidden bg-[#262626] rounded-2xl px-[30px] gap-[25px] flex flex-row justify-evenly items-center h-screen">
                 <div class="scroller-parent w-full flex flex-col gap-[20px] h-full">
                     <div ref="el" class="left-scroller-child h-full flex flex-col gap-[20px] w-full">
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/wo0P2ApHuac8yCSOoIU4GYSCkOc.png" alt=""/></div>
+                        <div class="work-image-container"><img decoding="async" src="../assets/media/pulse_primary.png" alt=""/></div>
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/9nNEv94U4EwW3ZkcswuOBMt2jk.jpg" alt=""/></div>
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/cpbJvQoTTkomFOd8RSNsHF3b8.jpg" alt=""/></div>
                     </div>

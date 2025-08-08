@@ -12,7 +12,7 @@ onMounted(() => {
       scrollTrigger: {
         trigger: ".intro-paragraph",
         start: "top 90%",
-        end: "bottom 40%",
+        end: "bottom 50%",
         scrub: 0.5,
         markers: false
       }

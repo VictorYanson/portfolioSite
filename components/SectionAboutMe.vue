@@ -10,8 +10,7 @@ onMounted(() => {
         ease: "power2.out",
         scrollTrigger: {
             trigger: ".rotate-img",
-            start: "top 80%",
-            toggleActions: "play none none reverse"
+            start: "top 80%"
         }
     });
 
@@ -25,8 +24,7 @@ onMounted(() => {
         stagger: 0.25,
         scrollTrigger: {
             trigger: '.rotate-img',
-            start: "top 80%",
-            toggleActions: "play none none reverse"
+            start: "top 80%"
         }
     });
 });

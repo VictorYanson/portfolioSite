@@ -1,12 +1,36 @@
 <script setup>
+const { scrollTo } = useScrollTo()
 import { ref, onMounted } from 'vue'
 const { $gsap } = useNuxtApp()
 
 const isClosed = ref(true)
 const menuRef = ref(null)
+let tl 
+
+onMounted(() => {
+  const menuItems = $gsap.utils.toArray(".menu-item")
+
+  tl = $gsap.timeline()
+
+  tl.from(menuItems, {
+    x: 30,
+    opacity: 0,
+    stagger: 0.1,
+    duration: 0.5,
+    delay: 0.3,
+    ease: "power2.out"
+  })
+  .from('.buttons', {
+    y: 30,
+    opacity: 0,
+    duration: 0.5,
+    ease: "power2.out"
+  }, "-=1")
+})
 
 const toggleAnimation = () => {
   isClosed.value = !isClosed.value
+  if (tl && !isClosed.value) tl.play(0) 
 }
 
 const handleClickOutside = (event) => {
@@ -44,25 +68,22 @@ onMounted(() => {
             :class="{'opacity-0 pointer-events-none': isClosed, 'opacity-100': !isClosed}"
             class="menu flex flex-col gap-y-5 border border-gray-100 md:w-[300px] min-w-[200px] p-10 absolute top-[80px] right-[7.5%] bg-white rounded-l-3xl rounded-br-3xl rounded-tr transition-opacity duration-300"
         >
-            <a class="menu-item" href="">
+            <button class="menu-item" @click="scrollTo('process')">
                 <p>Process</p>
-            </a>
-            <a class="menu-item" href="">
+            </button>
+            <button class="menu-item" @click="scrollTo('case-studies')">
                 <p>Work</p>
-            </a>
-            <a class="menu-item" href="">
+            </button>
+            <button class="menu-item" @click="scrollTo('about-me')">
                 <p>About</p>
-            </a>
-            <a class="menu-item" href="">
+            </button>
+            <button class="menu-item" @click="scrollTo('pricing')">
                 <p>Pricing</p>
-            </a>
-            <a class="menu-item" href="">
+            </button>
+            <button class="menu-item" @click="scrollTo('faq')">
                 <p>FAQ</p>
-            </a>
-            <a class="menu-item" href="">
-                <p>Contact</p>
-            </a>
-            <div class="flex flex-row gap-x-3">
+            </button>
+            <div class="buttons flex flex-row gap-x-3">
                 <a style="z-index: 1000; cursor: pointer;" href="#">
                     <div class="social-button-dark rounded-full flex justify-center items-center p-2 border">
                         <Icon class="icon" icon="meteor-icons:at" width="20" height="20" style="color: black; transition: color 0.3s ease-in-out;" />
@@ -88,6 +109,10 @@ onMounted(() => {
     font-size: 20px;
     color: black;
     transition: color 0.3s;
+}
+
+.menu-item {
+    @apply w-max;
 }
 
 .menu-item:hover p {

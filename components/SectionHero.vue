@@ -15,7 +15,7 @@ onMounted(() => {
     });
   
     $gsap.from(".fade-up", { opacity: 0, y: 100, duration: 1, delay: 1, ease: "power2.out" });
-    $gsap.from(".fade-in", { opacity: 0, delay: 1, ease: "power2.out" });
+    $gsap.from(".fade-in", { opacity: 0, delay: 1, duration: 1.7, ease: "power2.out" });
     $gsap.from(".hero-image-container", { opacity: 0, y: -50, duration: 2, rotation: -15, ease: "power2.out" });
 })
 </script>
@@ -27,7 +27,7 @@ onMounted(() => {
                 <Icon icon="icon-park-outline:dot" style="color: #0cb300;"/>
                 <p class="text-black">Booking Open — 2 Spots Left</p>
             </div>
-            <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[870px] break-words">
+            <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[450px] md:max-w-[870px] break-words">
                 <h1>Full-Stack</h1>
                 <div class="hero-image-container -rotate-2">
                     <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">

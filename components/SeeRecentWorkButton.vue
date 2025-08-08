@@ -1,5 +1,9 @@
+<script setup>
+const { scrollTo } = useScrollTo()
+</script>
+
 <template>
-    <div class="circle-container">
+    <div class="circle-container" @click="scrollTo('case-studies')">
         <Icon icon="solar:folder-bold" height="50" width="50"/>
         <div class="see-recent-work absolute rotate-12 left-3 -top-16 w-40 h-12 bg-black flex items-center justify-center rounded-full">
             <div class="relative flex justify-center">

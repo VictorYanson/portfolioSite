@@ -1,12 +1,12 @@
 <template>
   <SunRayBG />
-  <SectionHero />
-  <SectionIntro />
-  <SectionHello />
-  <SectionProces />
-  <SectionTestimonial />
-  <SectionCaseStudies />
-  <SectionAboutMe />
-  <SectionPricePlans />
-  <SectionFAQ />
+  <SectionHero id="hero" />
+  <SectionIntro id="intro" />
+  <SectionHello id="hello" />
+  <SectionProces id="process" />
+  <SectionTestimonial id="testimonial" />
+  <SectionCaseStudies id="case-studies" />
+  <SectionAboutMe id="about-me" />
+  <SectionPricePlans id="pricing" />
+  <SectionFAQ id="faq" />
 </template>

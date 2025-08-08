@@ -1,9 +1,23 @@
 <script setup>
-// const { GSAP } = useGSAP('.entrance');
+import { onMounted } from 'vue'
+const { $gsap, $SplitText } = useNuxtApp()
 
-// onMounted(() => {
-//   GSAP();
-// });
+onMounted(() => {
+  const splitText = new $SplitText('.entrance', { type: "lines" })
+  
+  $gsap.from(splitText.lines, {
+    duration: 1,
+    y: 30,
+    filter: "blur(20px)",
+    opacity: 0,
+    stagger: 0.15,
+    ease: "power2.out",
+    scrollTrigger: {
+      trigger: ".entrance",
+      start: "top 80%",
+    }
+  })
+})
 
 const props = defineProps({
   bodyText: {
@@ -31,7 +45,7 @@ const props = defineProps({
             <p class="entrance w-4/5 text-black text-lg text-light leading-relaxed">{{ bodyText }}</p>
             <p class="text-7xl w-1/5 text-gray-400 flex flex-col justify-end items-end">"</p>
         </div>
-        <div class="flex flex-row items-center gap-x-4">
+        <div class="down flex flex-row items-center gap-x-4">
             <div class="aspect-square w-16 rounded-full overflow-hidden">
               <img :src="imgLink" alt="">
             </div>

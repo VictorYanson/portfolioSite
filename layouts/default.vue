@@ -4,5 +4,6 @@
     <Header />
     <NuxtPage />
     <Footer />
+    <ComponentBottomBlur />
   </div>
 </template>

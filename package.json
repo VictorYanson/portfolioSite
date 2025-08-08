@@ -17,12 +17,10 @@
     "@studio-freight/lenis": "^1.0.42",
     "gsap": "^3.13.0",
     "nuxt": "^4.0.1",
-    "primevue": "^4.3.7",
     "vue": "^3.5.17",
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "@primevue/nuxt-module": "^4.3.7",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.6.14"
   }

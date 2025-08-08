@@ -1,10 +1,3 @@
-<script setup>
-import Accordion from 'primevue/accordion';
-import AccordionPanel from 'primevue/accordionpanel';
-import AccordionHeader from 'primevue/accordionheader';
-import AccordionContent from 'primevue/accordioncontent';
-</script>
-
 <template>
     <section class="flex justify-center mb-48">
         <div class="responsive-content w-full flex flex-col items-center px-6">
@@ -31,40 +24,7 @@ import AccordionContent from 'primevue/accordioncontent';
                     </div>
                 </div>
                 <div class="w-full md:w-3/5 px-1 md:p-0">
-                    <Accordion :value="['0']" lazy multiple unstyled class="w-full border-none">
-                        <AccordionPanel value="0" class="!border-t !border-[#acacac]">
-                            <AccordionHeader>What's the difference between a subscription and a custom project?</AccordionHeader>
-                            <AccordionContent>
-                                <p class="m-0">
-                                    The subscription is ongoing and flexible — ideal for continuous design needs. Custom projects are one-time, fixed-scope engagements for larger goals like a rebrand or product launch.
-                                </p>
-                            </AccordionContent>
-                        </AccordionPanel>
-                        <AccordionPanel value="1">
-                            <AccordionHeader>How fast is the turnaround?</AccordionHeader>
-                            <AccordionContent>
-                                <p class="m-0">
-                                    Most requests are delivered within 1-2 business days. Larger tasks may take longer, but you'll always be kept in the loop.
-                                </p>
-                            </AccordionContent>
-                        </AccordionPanel>
-                        <AccordionPanel value="2">
-                            <AccordionHeader>How many requests can I make?</AccordionHeader>
-                            <AccordionContent>
-                                <p class="m-0">
-                                    As many as you like — with a subscription, you can queue unlimited requests, and they'll be handled one at a time in priority order.
-                                </p>
-                            </AccordionContent>
-                        </AccordionPanel>
-                        <AccordionPanel value="3">
-                            <AccordionHeader>What types of design do you handle?</AccordionHeader>
-                            <AccordionContent>
-                                <p class="m-0">
-                                    Websites, product UI, landing pages, brand assets, decks, social media visuals — anything digital that needs to look and feel sharp.
-                                </p>
-                            </AccordionContent>
-                        </AccordionPanel>
-                    </Accordion>
+                    
                 </div>
             </div>
         </div>
@@ -72,33 +32,5 @@ import AccordionContent from 'primevue/accordioncontent';
 </template>
 
 <style scoped>
-.p-accordionheader {
-    font-size: 22px;
-    line-height: 34px;
-    align-items: start;
-    gap: 250px;
-}
 
-@media (max-width: 767px) {
-    .p-accordionheader {
-        gap: 30px;
-    }
-}
-
-.p-accordioncontent p {
-    font-size: 14px;
-    line-height: 26px;
-}
-
-.p-accordionpanel {
-    border-bottom: solid 1px #acacac;
-    padding: 30px 0;
-}
-
-:deep(.p-accordion .p-accordionheader button[aria-expanded="false"] .p-accordionheader-toggle-icon) {
-  background-image: url('/icons/plus.svg') !important;
-}
-:deep(.p-accordion .p-accordionheader button[aria-expanded="true"] .p-accordionheader-toggle-icon) {
-  background-image: url('/icons/minus.svg') !important;
-}
 </style>
