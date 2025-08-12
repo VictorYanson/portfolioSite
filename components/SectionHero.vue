@@ -27,7 +27,7 @@ onMounted(() => {
                 <Icon icon="icon-park-outline:dot" style="color: #0cb300;"/>
                 <p class="text-black">Booking Open — 2 Spots Left</p>
             </div>
-            <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[450px] md:max-w-[870px] break-words">
+            <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[450px] md:max-w-[900px] break-words">
                 <h1>Full-Stack</h1>
                 <div class="hero-image-container -rotate-2">
                     <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">

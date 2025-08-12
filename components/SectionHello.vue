@@ -1,6 +1,6 @@
 <script setup>
 import { onMounted } from 'vue'
-const { $gsap, $scrollTrigger, } = useNuxtApp()
+const { $gsap } = useNuxtApp()
 import { SplitText } from 'gsap/SplitText'
 
 onMounted(() => {

@@ -12,13 +12,11 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
         { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon-180x180.png' },
         { rel: 'apple-touch-icon', sizes: '152x152', href: '/apple-touch-icon-152x152.png' },
-        { rel: 'apple-touch-icon', sizes: '120x120', href: '/apple-touch-icon-120x120.png' }
+        { rel: 'apple-touch-icon', sizes: '120x120', href: '/apple-touch-icon-120x120.png' },
+        { rel: 'preconnect', href: 'https://app.cal.com' },
+        { rel: 'dns-prefetch', href: 'https://app.cal.com' }
       ],
     },
-    pageTransition: {
-      name: 'page',
-      mode: 'out-in'
-    }
   },
   devtools: { enabled: false },
   css: [

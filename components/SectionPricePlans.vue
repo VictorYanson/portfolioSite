@@ -63,12 +63,12 @@ const onClick = () => {
                             imgLink= "https://framerusercontent.com/images/Y3PGv0d0lyAiS8gk3emx3d41fvU.png?scale-down-to=512"
                             name= "Tom Richter"
                             position= "Founder & CEO at Corelytics"
-                            benefit1= "Unlimited design requests"
-                            benefit2= "Fast turnaround"
-                            benefit3= "Fixed monthly rate"
-                            benefit4= "Async communication"
-                            benefit5= "Flexible scope"
-                            benefit6= "Pause anytime"
+                            benefit1= "Tailored scope & deliverables"
+                            benefit2= "One-off fee or milestone billing"
+                            benefit3= "End-to-end collaboration"
+                            benefit4= "High-impact execution"
+                            benefit5= "Workshops & reviews"
+                            benefit6= "Full documentation & assets"
                         />
                     </div>
                 </div>

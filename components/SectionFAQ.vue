@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="w-full md:w-3/5 px-1 md:p-0">
-                    
+                    <ComponentAccordion />
                 </div>
             </div>
         </div>

@@ -1,5 +1,4 @@
 <template>
-  <SunRayBG />
   <SectionHero id="hero" />
   <SectionIntro id="intro" />
   <SectionHello id="hello" />

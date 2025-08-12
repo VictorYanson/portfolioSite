@@ -3,6 +3,20 @@ const { scrollTo } = useScrollTo()
 import { ref, onMounted } from 'vue'
 const { $gsap } = useNuxtApp()
 
+import { useRouter, useRoute } from 'vue-router'
+const router = useRouter()
+const route = useRoute()
+
+const goToSection = async (sectionId) => {
+  if (route.path === '/') {
+    scrollTo(sectionId)
+    buttonClose()
+  } else {
+    await router.push(`/#${sectionId}`)
+    buttonClose()
+  }
+}
+
 const isClosed = ref(true)
 const menuRef = ref(null)
 let tl 
@@ -72,19 +86,19 @@ onMounted(() => {
             :class="{'opacity-0 pointer-events-none': isClosed, 'opacity-100': !isClosed}"
             class="menu flex flex-col gap-y-5 border border-gray-100 md:w-[300px] min-w-[200px] p-10 absolute top-[80px] right-[7.5%] bg-white rounded-l-3xl rounded-br-3xl rounded-tr transition-opacity duration-300"
         >
-            <button class="menu-item" @click="scrollTo('process'), buttonClose()">
+            <button class="menu-item" @click="goToSection('process'), buttonClose()">
                 <p>Process</p>
             </button>
-            <button class="menu-item" @click="scrollTo('case-studies'), buttonClose()">
+            <button class="menu-item" @click="goToSection('case-studies'), buttonClose()">
                 <p>Work</p>
             </button>
-            <button class="menu-item" @click="scrollTo('about-me'), buttonClose()">
+            <button class="menu-item" @click="goToSection('about-me'), buttonClose()">
                 <p>About</p>
             </button>
-            <button class="menu-item" @click="scrollTo('pricing'), buttonClose()">
+            <button class="menu-item" @click="goToSection('pricing'), buttonClose()">
                 <p>Pricing</p>
             </button>
-            <button class="menu-item" @click="scrollTo('faq'), buttonClose()">
+            <button class="menu-item" @click="goToSection('faq'), buttonClose()">
                 <p>FAQ</p>
             </button>
             <div class="buttons flex flex-row gap-x-3">
