@@ -22,5 +22,6 @@
     position: fixed;
     width: 100%;
     z-index: 1;
+    pointer-events: none;
 }
 </style>

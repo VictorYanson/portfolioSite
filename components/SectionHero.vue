@@ -24,7 +24,7 @@ onMounted(() => {
 
 <template>
     <section class="flex justify-center">
-        <div class="responsive-content pt-[180px] pb-[75px] flex-col gap-y-8">
+        <div class="responsive-content pt-[110px] md:pt-[180px] pb-[75px] flex-col gap-y-8">
             <div class="fade-in flex flex-row rounded-[100px] items-center bg-white pr-4 pl-3 py-2 gap-x-2">
                 <Icon icon="icon-park-outline:dot" style="color: #0cb300;"/>
                 <p class="text-black">Booking Open — 2 Spots Left</p>
@@ -33,8 +33,7 @@ onMounted(() => {
                 <h1>Full-Stack</h1>
                 <div class="hero-image-container -rotate-2">
                     <div class="scroll-container-1 h-full w-full flex flex-col">
-                        <img class="w-full h-full object-cover flex-shrink-0" src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
-                        <img class="w-full h-full object-cover flex-shrink-0" src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
+                        <img class="w-full h-full object-cover flex-shrink-0 scale-110" src="../assets/media/mockup_1.jpg" alt="">
                     </div>
                 </div>
                 <h1 class="text-[#616160]">MVPs</h1>
@@ -58,19 +57,19 @@ onMounted(() => {
                 <div class="flex flex-col">
                     <div class="flex flex-row items-center ml-[8px]">
                         <div class="client-img-container">
-                            <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                            <img src="../assets/media/client_portrait_1.jpg" alt="">
                         </div>
                         <div class="client-img-container">
-                            <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                            <img src="../assets/media/client_portrait_2.jpg" alt="">
                         </div>
                         <div class="client-img-container">
-                            <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                            <img src="../assets/media/client_portrait_3.jpg" alt="">
                         </div>
                         <div class="client-img-container">
-                            <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                            <img src="../assets/media/client_portrait_4.jpg" alt="">
                         </div>
                         <div class="client-img-container">
-                            <img src="https://framerusercontent.com/images/75ILrhKQhUkwU1dH15BUDezAQ.png?scale-down-to=512" alt="">
+                            <img src="../assets/media/client_portrait_5.jpg" alt="">
                         </div>
                     </div>
                     <p class="text-[12px]">Trusted by Leaders</p>
@@ -81,10 +80,6 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.scroll-container-1 {
-  animation: vertical-scroll 5s ease-in-out infinite;
-}
-
 .scroll-container-2 {
   animation: horizontal-scroll 15s linear infinite;
 }
@@ -98,24 +93,12 @@ onMounted(() => {
   }
 }
 
-@keyframes vertical-scroll {
-  0% {
-    transform: translateY(0);
-  }
-  25% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(-100%);
-  }
-}
-
 .client-img-container {
     width: 31px;
     height: 31px;
     border-radius: 100%;
     overflow: hidden;
-    border: solid 2px var(--color-white);
+    border: solid 1px #ebebeb;
     margin-left: -9px;
 }
 
@@ -138,7 +121,7 @@ onMounted(() => {
   }
 
   .hero-heading {
-    gap: 12px;
+    gap: 10px;
   }
 }
 </style>
