@@ -134,6 +134,7 @@ onMounted(() => {
     max-width: 86px;
     max-height: 60px;
     border-radius: 20px;
+    border: solid 2px var(--color-black);
   }
 
   .hero-heading {
