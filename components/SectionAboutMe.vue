@@ -38,7 +38,7 @@ onMounted(() => {
                 <h3 class="italic-heading">About Me</h3>
                 <h2>Your Tech Wingman</h2>
             </div>
-            <div class="flex flex-col md:h-[500px] md:flex-row items-center gap-16">
+            <div class="flex flex-col md:h-[500px] md:flex-row items-center gap-16 z-20">
                 <div class="flex flex-col h-full justify-between w-full md:w-1/2 gap-y-8">
                     <div class="pseudo-border rotate-img rotate-[-2deg] w-full aspect-[4/3]">
                         <img class="aspect-[4/3]"  style="border-radius: inherit; object-position: 90%;" loading="lazy" src="../assets/media/portrait_2.jpg" alt="">

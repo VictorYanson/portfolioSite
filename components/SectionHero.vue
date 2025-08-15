@@ -1,22 +1,24 @@
 <script setup>
 import { onMounted } from 'vue'
-const { $gsap, $SplitText } = useNuxtApp()
+const { $gsap, $SplitText, $ScrollTrigger } = useNuxtApp()
 
 onMounted(() => {
-    const splitText = new $SplitText(".hero-heading h1", { type: "chars" })
+    $gsap.registerPlugin($ScrollTrigger);
 
-    $gsap.from(splitText.chars, {
+    const splitText = new $SplitText(".hero-heading h1", { type: "chars" })
+    const tl = $gsap.timeline();
+
+    tl.from(splitText.chars, {
         duration: 1,
         y: 30,
         filter: "blur(20px)",
         opacity: 0,
         stagger: 0.05,
         ease: "power2.out"
-    });
-  
-    $gsap.from(".fade-up", { opacity: 0, y: 100, duration: 1, delay: 1, ease: "power2.out" });
-    $gsap.from(".fade-in", { opacity: 0, delay: 1, duration: 1.7, ease: "power2.out" });
-    $gsap.from(".hero-image-container", { opacity: 0, y: -50, duration: 2, rotation: -15, ease: "power2.out" });
+    })
+    .from(".fade-up", { opacity: 0, y: 100, duration: 1, ease: "power2.out" }, "<")
+    .from(".fade-in", { opacity: 0, duration: 1.7, ease: "power2.out" }, "<")
+    .from(".hero-image-container", { opacity: 0, y: -50, duration: 2, rotation: -15, ease: "power2.out" }, "<");
 })
 </script>
 
@@ -30,12 +32,18 @@ onMounted(() => {
             <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[450px] md:max-w-[900px] break-words">
                 <h1>Full-Stack</h1>
                 <div class="hero-image-container -rotate-2">
-                    <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
+                    <div class="scroll-container-1 h-full w-full flex flex-col">
+                        <img class="w-full h-full object-cover flex-shrink-0" src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
+                        <img class="w-full h-full object-cover flex-shrink-0" src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
+                    </div>
                 </div>
                 <h1 class="text-[#616160]">MVPs</h1>
                 <h1 class="text-[#616160]">for</h1>
                 <div class="hero-image-container rotate-2">
-                    <img src="https://framerusercontent.com/images/jSslhcqo8HKNjUvPEceq7bhbY.jpg" alt="">
+                    <div class="scroll-container-2 h-full w-max flex flex-row">
+                        <img class="object-left object-cover flex-shrink-0 h-full w-auto" src="../assets/media/scrolling_logo.svg" alt="">
+                        <img class="object-left object-cover flex-shrink-0 h-full w-auto" src="../assets/media/scrolling_logo.svg" alt="">
+                    </div>
                 </div>
                 <h1>Solid</h1>
                 <h1>Startups</h1>
@@ -73,6 +81,35 @@ onMounted(() => {
 </template>
 
 <style scoped>
+.scroll-container-1 {
+  animation: vertical-scroll 5s ease-in-out infinite;
+}
+
+.scroll-container-2 {
+  animation: horizontal-scroll 15s linear infinite;
+}
+
+@keyframes horizontal-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes vertical-scroll {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(-100%);
+  }
+}
+
 .client-img-container {
     width: 31px;
     height: 31px;
@@ -83,10 +120,9 @@ onMounted(() => {
 }
 
 .hero-image-container {
-    width: 100%;
-    height: 100%;
-    max-width: 130px;
-    max-height: 110px;
+    background-color: var(--color-bright-red);
+    width: 130px;
+    height: 110px;
     overflow: hidden;
     border-radius: 30px;
     border: solid 3px var(--color-black);

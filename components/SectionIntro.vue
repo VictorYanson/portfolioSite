@@ -6,25 +6,28 @@ let leftAnimation
 let rightAnimation
 
 onMounted(() => {
-  const leftContent = document.querySelector('.left-scroller-child')
-  const rightContent = document.querySelector('.right-scroller-child')
+    const leftContent = document.querySelector('.left-scroller-child')
+    const rightContent = document.querySelector('.right-scroller-child')
 
-  leftContent.innerHTML += leftContent.innerHTML
-  rightContent.innerHTML += rightContent.innerHTML
-  
-  leftAnimation = $gsap.to(leftContent, {
-    y: -leftContent.scrollHeight / 2,
-    duration: 22,
-    ease: "none",
-    repeat: -1
-  })
+    leftContent.innerHTML += leftContent.innerHTML
+    rightContent.innerHTML += rightContent.innerHTML
 
-  rightAnimation = $gsap.to(rightContent, {
-    y: -rightContent.scrollHeight / 2,
-    duration: 18,
-    ease: "none",
-    repeat: -1
-  })
+    const leftScrollDistance = (leftContent.scrollHeight / 2) + 10
+    const rightScrollDistance = (rightContent.scrollHeight / 2) + 10
+
+    leftAnimation = $gsap.to(leftContent, {
+        y: -leftScrollDistance,
+        duration: 13,
+        ease: "none",
+        repeat: -1
+    })
+
+    rightAnimation = $gsap.to(rightContent, {
+        y: -rightScrollDistance,
+        duration: 15,
+        ease: "none",
+        repeat: -1
+    })
 })
 
 onBeforeUnmount(() => {
@@ -46,7 +49,7 @@ onBeforeUnmount(() => {
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/cpbJvQoTTkomFOd8RSNsHF3b8.jpg" alt=""/></div>
                     </div>
                 </div>
-                <div class="scroller-parent w-full flex flex-col gap-[20px] h-full hidden md:flex">
+                <div class="scroller-parent w-full flex flex-col h-full hidden md:flex">
                     <div class="right-scroller-child h-full flex flex-col gap-[20px] w-full">
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/J4Ox47KYv4g8Lb2C0PXNkjDaA.jpg" alt=""/></div>
                         <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/TWgBR6dpy8VfcVcGIy2oyBYzyY.jpg" alt=""/></div>
@@ -61,7 +64,7 @@ onBeforeUnmount(() => {
 <style scoped>
 .work-image-container {
     width: 100%;
-    height: 60%; 
+    height: 350px;
 }
 
 .work-image-container img {
