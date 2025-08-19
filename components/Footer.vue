@@ -13,7 +13,7 @@
             </div>
             <div class="responsive-content flex-col items-center justify-between w-full h-full z-10">
                 <div class="flex flex-col justify-center items-center gap-y-8">
-                    <h3 class="italic-heading">2 spots available</h3>
+                    <h3 class="italic-heading">Booking Spots Available</h3>
                     <h1 class="text-white md:text-8xl text-center">Let's Connect</h1>
                     <p class="text-white text-center md:text-lg leading-relaxed pb-4 max-w-[420px]">
                         Feel free to contact me if having any questions. I'm available for new projects or just for chatting.

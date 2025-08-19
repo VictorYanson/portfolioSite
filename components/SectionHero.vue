@@ -27,7 +27,7 @@ onMounted(() => {
         <div class="responsive-content pt-[110px] md:pt-[180px] pb-[75px] flex-col gap-y-8">
             <div class="fade-in flex flex-row rounded-[100px] items-center bg-white pr-4 pl-3 py-2 gap-x-2">
                 <Icon icon="icon-park-outline:dot" style="color: #0cb300;"/>
-                <p class="text-black">Booking Open — 2 spots left</p>
+                <p class="text-black">Booking Open</p>
             </div>
             <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[450px] md:max-w-[900px] break-words">
                 <h1>Full-Stack</h1>

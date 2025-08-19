@@ -70,7 +70,7 @@ onMounted(() => {
         <ServicePill class="p5" style="right: 25px; top: 350px; transform: rotate(-1deg);" text="Mobile Apps" bgColor="rgb(255, 69, 171)" icon="hugeicons:source-code" iconColor="rgb(201, 255, 251)" />
         <ServicePill class="p6" style="right: 25px; top: 450px; transform: rotate(3deg);" text="Strategy" bgColor="rgb(255, 213, 0)" icon="hugeicons:strategy" iconColor="rgb(102, 0, 128)" />
         <div class="intro-paragraph">
-            <p>We help startups and enterprise to establish an emotional connection between their products and happy engaged customers</p>
+            <p>I help startups and enterprises leverage AI to ship fast, clean, and launch-ready code that connects products with engaged customers</p>
         </div>
       </div>
     </section>
@@ -88,7 +88,7 @@ onMounted(() => {
 
 .intro-paragraph {
   width: 100%;
-  max-width: 800px;
+  max-width: 750px;
   position: relative;
 }
 

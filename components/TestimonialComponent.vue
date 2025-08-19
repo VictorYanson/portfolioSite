@@ -8,7 +8,6 @@ onMounted(() => {
   $gsap.from(splitText.lines, {
     duration: 1,
     y: 30,
-    filter: "blur(20px)",
     opacity: 0,
     stagger: 0.15,
     ease: "power2.out",

@@ -21,7 +21,7 @@ onMounted(() => {
             class="main-button flex flex-row justify-center w-full items-center gap-3 z-10"
             data-cal-config='{"layout":"month_view","theme":"light"}'
             data-cal-namespace="30min"
-            data-cal-link="blurry-frame/30min"
+            data-cal-link="nullone-labs/30min"
         >
             {{ text }}
             <svg

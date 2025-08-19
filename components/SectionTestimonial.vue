@@ -6,11 +6,14 @@
                 imgLink="https://media.licdn.com/dms/image/v2/C4E03AQGo1nXVr1RwWA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1546287110481?e=1757548800&v=beta&t=X-gdqYJxl20ApZidnv8XDNMiK3FNrQmSLfw5tyT65iw" 
                 name="Ali Zreik"
                 position="COO of Pulse Primary Care"
+                bodyText="I had the pleasure of working with Victor on our web rebrand. His help was incredibly professional and efficient, delivering a high-quality product that exceeded our expectations."
             />
             <TestimonialComponent 
                 imgLink="https://prd-agenda-data.s3.eu-west-1.amazonaws.com/participant/1243/image/SpencerKing.jpg" 
                 name="Spencer King" 
-                position="Founder of Royal Renders"/>
+                position="Founder of Royal Renders"
+                bodyText="Victor brings clarity to chaos. His dev work is not only beautiful but deeply strategic. He helped us build from the ground up, and our audience response has been incredible."
+            />
         </div>
     </section>
 </template>

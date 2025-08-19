@@ -80,15 +80,15 @@ const handleToggle = () => {
                     <div class="flex flex-col w-full gap-3">
                         <div class="flex flex-row w-full min-w-[300px] items-center gap-x-2">
                             <Icon icon="icon-park-outline:dot" style="color: #0cb300;"/>
-                            <p>Booking Open — 2 Spots Left</p>
+                            <p>Booking Open</p>
                         </div>
-                        <MainButton class="w-max" text="Book Free Discovery Call" />
+                        <MainButton class="w-max" text="Plan Discovery Call" />
                     </div>
                 </div>
                 <div class="flex flex-col w-full md:w-1/2 justify-between md:h-full rotate-[1deg]">
                     <div class="h-full w-full flex flex-col rounded-[15px] bg-white py-14 pl-14 pr-12">
                         <ComponentIncluded class="card-1" :class="{ 'h-auto opacity-1' : isVisible, 'h-0 opacity-0 pointer-events-none': !isVisible }"
-                            testimonial= "Astrid's minimalist design approach transformed our brand. The simplicity and clarity she brought to our identity made us stand out in a crowded market."
+                            testimonial= "Victor's minimalist design approach transformed our brand. The simplicity and clarity he brought to our identity made us stand out in a crowded market."
                             imgLink= "https://framerusercontent.com/images/etglVFVv5e7VnmUVyHsNK3oyIbI.png?scale-down-to=512"
                             name= "Helena Moreau"
                             position= "Creative Director at Studio Novo"
@@ -100,7 +100,7 @@ const handleToggle = () => {
                             benefit6= "1:1 Support"
                         />
                         <ComponentIncluded class="card-2" :class="{ 'h-0 opacity-0 pointer-events-none' : isVisible, 'h-auto opacity-1': !isVisible }"
-                            testimonial= "Effortless process. Exceptional results. Working with Joris felt like having an in-house designer on speed dial."
+                            testimonial= "Effortless process. Exceptional results. Working with Victor felt like having an in-house designer on speed dial."
                             imgLink= "https://framerusercontent.com/images/Y3PGv0d0lyAiS8gk3emx3d41fvU.png?scale-down-to=512"
                             name= "Tom Richter"
                             position= "Founder & CEO at Corelytics"
