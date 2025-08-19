@@ -46,8 +46,8 @@ const props = defineProps({
 <template>
     <div class="flex flex-col gap-14 w-full">
         <div class="flex flex-col gap-10">
-            <h3 class="text-xl font-medium">What's included</h3>
-            <div class="flex flex-col gap-y-3">
+            <h3 class="animate text-xl font-medium">What's included</h3>
+            <div class="animate flex flex-col gap-y-3">
                 <ComponentIncludedBenefit :text="benefit1" />
                 <ComponentIncludedBenefit :text="benefit2" />
                 <ComponentIncludedBenefit :text="benefit3" />
@@ -56,7 +56,7 @@ const props = defineProps({
                 <ComponentIncludedBenefit :text="benefit6" />
             </div>
         </div>
-        <div class="flex flex-col gap-y-6">
+        <div class="animate flex flex-col gap-y-6">
             <p class="text-black md:text-lg text-[16px] text-light md:leading-relaxed leading-[23px]">
                 {{ testimonial }}
             </p>

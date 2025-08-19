@@ -60,7 +60,7 @@ onMounted(() => {
         <div class="responsive-content relative flex-col pb-48 gap-y-20" >
             <div class="flex flex-col items-center gap-y-2">
                 <h3 class="italic-heading">Our Process, Explained</h3>
-                <h2 >Here's how it works</h2>
+                <h2 >Here's How It Works</h2>
             </div>
             <div ref="container" class="card-container relative flex w-full px-4 flex-row items-center justify-between gap-x-10">
                 <svg class="draw-svg curve absolute z-10" xmlns="http://www.w3.org/2000/svg" width="245px" height="75px" viewBox="0 0 247 69">

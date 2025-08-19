@@ -1,8 +1,51 @@
-<script setup lang="ts">
+<script setup>
+import { onMounted } from 'vue';
 const { toggleVisibility, isVisible } = useToggleVisibility('toggle');
+const { $gsap } = useNuxtApp();
 
-const onClick = () => {
-  toggleVisibility();
+let animation1 = null;
+let animation2 = null;
+
+onMounted(() => {
+    animation1 = $gsap.timeline();
+    animation2 = $gsap.timeline();
+
+    const card1Elements = $gsap.utils.toArray('.card-1 .animate');
+    const card2Elements = $gsap.utils.toArray('.card-2 .animate');
+
+    animation1.from(card1Elements, {
+        duration: 0.5,
+        opacity: 0,
+        stagger: 0.2,
+        filter: "blur(20px)",
+        paused: false
+    });
+
+    animation2.from(card2Elements, {
+        duration: 0.5,
+        opacity: 0,
+        stagger: 0.2,
+        filter: "blur(20px)",
+        paused: false,
+    });
+});
+
+let animationPlayed = false;
+const cardAnimation = () => {
+    if (!animationPlayed) {
+        animation1.play(0);
+        animation2.reverse(0);
+        animationPlayed = true;
+    } else if (animationPlayed) {
+        animation2.play(0);
+        animation1.reverse(0);
+        animationPlayed = false;
+    }
+};
+
+const handleToggle = () => {
+    toggleVisibility();
+    cardAnimation();
 };
 </script>
 
@@ -18,21 +61,21 @@ const onClick = () => {
                 <div class="flex flex-col md:w-1/2 md:p-0 p-4 justify-between md:h-full">
                     <div class="flex flex-col gap-10">
                         <div class="slider-container flex flex-row items-center gap-x-4">
-                            <p :class="{ 'text-gray-400': isVisible, '!text-black': !isVisible }">Monthly</p>
+                            <p :class="{ 'text-gray-400': isVisible, '!text-black': !isVisible }">MVP</p>
                             <label class="switch">
-                                <input type="checkbox" @click="onClick" class="checkbox">
+                                <input type="checkbox" @change="handleToggle" class="checkbox">
                                 <div class="slider"></div>
                             </label>
-                            <p :class="{ '!text-black' : isVisible, 'text-gray-400': !isVisible }">Yearly</p>
+                            <p :class="{ '!text-black' : isVisible, 'text-gray-400': !isVisible }">Strategy</p>
                         </div>
                         <div class="flex flex-col">
                             <div id="monthly" class="toggle flex flex-row">
-                                <p id="price-mo" class="toggle text-5xl md:text-6xl text-black">$7,500</p>
-                                <p id="period-mo" class="toggle text-5xl md:text-6xl">/mo</p>
+                                <p id="price-mo" class="toggle text-5xl md:text-6xl text-black">€3,500</p>
+                                <p id="period-mo" class="toggle text-5xl md:text-6xl">/project</p>
                             </div>
                             <div id="yearly" class="toggle yearly flex flex-row gap-2">
                                 <p id="price-ye" class="toggle text-5xl md:text-6xl">from</p>
-                                <p id="period-ye" class="toggle text-5xl md:text-6xl text-black">$11,500</p>
+                                <p id="period-ye" class="toggle text-5xl md:text-6xl text-black">€2,000</p>
                             </div>
                         </div>
                     </div>
@@ -46,29 +89,29 @@ const onClick = () => {
                 </div>
                 <div class="flex flex-col w-full md:w-1/2 justify-between md:h-full rotate-[1deg]">
                     <div class="h-full w-full flex flex-col rounded-[15px] bg-white py-14 pl-14 pr-12">
-                        <ComponentIncluded :class="{ 'h-auto opacity-1' : isVisible, 'h-0 opacity-0 pointer-events-none': !isVisible }"
+                        <ComponentIncluded class="card-1" :class="{ 'h-auto opacity-1' : isVisible, 'h-0 opacity-0 pointer-events-none': !isVisible }"
                             testimonial= "Astrid's minimalist design approach transformed our brand. The simplicity and clarity she brought to our identity made us stand out in a crowded market."
                             imgLink= "https://framerusercontent.com/images/etglVFVv5e7VnmUVyHsNK3oyIbI.png?scale-down-to=512"
                             name= "Helena Moreau"
                             position= "Creative Director at Studio Novo"
-                            benefit1= "Unlimited design requests"
-                            benefit2= "Fast turnaround"
-                            benefit3= "Fixed monthly rate"
-                            benefit4= "Async communication"
-                            benefit5= "Flexible scope"
-                            benefit6= "Pause anytime"
+                            benefit1= "Bespoke Strategy Session"
+                            benefit2= "Workflow Audit"
+                            benefit3= "Custom Automation Blueprint"
+                            benefit4= "Tool Recommendations"
+                            benefit5= "Implementation Roadmap"
+                            benefit6= "1:1 Support"
                         />
-                        <ComponentIncluded :class="{ 'h-0 opacity-0 pointer-events-none' : isVisible, 'h-auto opacity-1': !isVisible }"
+                        <ComponentIncluded class="card-2" :class="{ 'h-0 opacity-0 pointer-events-none' : isVisible, 'h-auto opacity-1': !isVisible }"
                             testimonial= "Effortless process. Exceptional results. Working with Joris felt like having an in-house designer on speed dial."
                             imgLink= "https://framerusercontent.com/images/Y3PGv0d0lyAiS8gk3emx3d41fvU.png?scale-down-to=512"
                             name= "Tom Richter"
                             position= "Founder & CEO at Corelytics"
-                            benefit1= "Tailored scope & deliverables"
-                            benefit2= "One-off fee or milestone billing"
-                            benefit3= "End-to-end collaboration"
-                            benefit4= "High-impact execution"
-                            benefit5= "Workshops & reviews"
-                            benefit6= "Full documentation & assets"
+                            benefit1= "Clickable Prototype in Weeks"
+                            benefit2= "User-Centered Design"
+                            benefit3= "Scalable Codebase"
+                            benefit4= "API & Third-Party Integrations"
+                            benefit5= "Iterative Feedback Cycles"
+                            benefit6= "Tech Stack Guidance"
                         />
                     </div>
                 </div>
