@@ -27,13 +27,13 @@ onMounted(() => {
         <div class="responsive-content pt-[110px] md:pt-[180px] pb-[75px] flex-col gap-y-8">
             <div class="fade-in flex flex-row rounded-[100px] items-center bg-white pr-4 pl-3 py-2 gap-x-2">
                 <Icon icon="icon-park-outline:dot" style="color: #0cb300;"/>
-                <p class="text-black">Booking Open — 2 Spots Left</p>
+                <p class="text-black">Booking Open — 2 spots left</p>
             </div>
             <div class="hero-heading flex gap-x-6 justify-center items-center flex-wrap max-w-[450px] md:max-w-[900px] break-words">
                 <h1>Full-Stack</h1>
                 <div class="hero-image-container -rotate-2">
-                    <div class="scroll-container-1 h-full w-full flex flex-col">
-                        <img class="w-full h-full object-cover flex-shrink-0 scale-110" src="../assets/media/mockup_1.jpg" alt="">
+                    <div class="scroll-container-1 h-full w-full flex flex-col !bg-blue-700">
+                        <img class="w-full h-full object-cover flex-shrink-0 scale-110" src="/img/hero_1.jpg" alt="">
                     </div>
                 </div>
                 <h1 class="text-[#616160]">MVPs</h1>
@@ -53,7 +53,7 @@ onMounted(() => {
                 </p>
             </div>
             <div class="fade-up flex flex-row items-center justify-center gap-x-6">
-                <MainButton text="Choose your plan" link="#"/>
+                <MainButton text="Book a Free Call" link="#"/>
                 <div class="flex flex-col">
                     <div class="flex flex-row items-center ml-[8px]">
                         <div class="client-img-container">

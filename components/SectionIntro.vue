@@ -44,16 +44,16 @@ onBeforeUnmount(() => {
             <div class="inner-container overflow-hidden bg-[#262626] rounded-2xl w-full px-[30px] gap-[25px] flex flex-row justify-evenly items-center h-screen">
                 <div class="scroller-parent w-full flex flex-col gap-[20px] h-full">
                     <div ref="el" class="left-scroller-child h-full flex flex-col gap-[20px] w-full">
+                        <div class="work-image-container"><img decoding="async" src="/img/scroll_mockup_1.jpg" alt=""/></div>
                         <div class="work-image-container"><img decoding="async" src="../assets/media/pulse_primary.png" alt=""/></div>
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/9nNEv94U4EwW3ZkcswuOBMt2jk.jpg" alt=""/></div>
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/cpbJvQoTTkomFOd8RSNsHF3b8.jpg" alt=""/></div>
-                    </div>
+                        <div class="work-image-container"><img decoding="async" src="/img/scroll_mockup_2.webp" alt=""/></div>
+                    </div>  
                 </div>
                 <div class="scroller-parent w-full flex flex-col h-full hidden md:flex">
                     <div class="right-scroller-child h-full flex flex-col gap-[20px] w-full">
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/J4Ox47KYv4g8Lb2C0PXNkjDaA.jpg" alt=""/></div>
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/TWgBR6dpy8VfcVcGIy2oyBYzyY.jpg" alt=""/></div>
-                        <div class="work-image-container"><img decoding="async" src="https://framerusercontent.com/images/cpbJvQoTTkomFOd8RSNsHF3b8.jpg" alt=""/></div>
+                        <div class="work-image-container"><img decoding="async" src="/img/scroll_mockup_3.jpg" alt=""/></div>
+                        <div class="work-image-container"><img decoding="async" src="/img/scroll_mockup_4.jpg" alt=""/></div>
+                        <div class="work-image-container"><img decoding="async" src="/img/scroll_mockup_5.jpg" alt=""/></div>
                     </div>
                 </div>
             </div>

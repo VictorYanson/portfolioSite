@@ -147,4 +147,8 @@ p {
     border: solid 1px #f7f7f7;
     overflow: hidden;
 }
+
+.img-container {
+    width: 100%;
+}
 </style>

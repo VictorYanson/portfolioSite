@@ -14,18 +14,16 @@ onMounted(() => {
     const card2Elements = $gsap.utils.toArray('.card-2 .animate');
 
     animation1.from(card1Elements, {
-        duration: 0.5,
+        duration: 1,
         opacity: 0,
         stagger: 0.2,
-        filter: "blur(20px)",
         paused: false
     });
 
     animation2.from(card2Elements, {
-        duration: 0.5,
+        duration: 1,
         opacity: 0,
         stagger: 0.2,
-        filter: "blur(20px)",
         paused: false,
     });
 });

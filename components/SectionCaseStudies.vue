@@ -6,10 +6,10 @@
                 <h2 >Recent Case Studies</h2>
             </div>
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-10">
-                <CaseStudyComponent text="Custom AI Tool" link="/portfolio" imglink="/img/case_study_mockup_3.jpg" tag1="AI solution" tag2="Automation" />
-                <CaseStudyComponent text="Full-Stack MVP" link="/portfolio" imglink="/img/case_study_mockup_4.jpg" tag1="Web Dev" tag2="SaaS" />
-                <CaseStudyComponent text="Mobile App" link="/portfolio" imglink="/img/case_study_mockup_1.jpg" tag1="IOS" tag2="Android" />
-                <CaseStudyComponent text="Process Automation" link="/portfolio" imglink="/img/case_study_mockup_5.jpg" tag1="Automation" tag2="Scalability" />
+                <CaseStudyComponent text="Custom AI Tool" link="/portfolio_1" imglink="/img/case_study_mockup_3.jpg" tag1="AI solution" tag2="Automation" />
+                <CaseStudyComponent text="Full-Stack MVP" link="/portfolio_2" imglink="/img/case_study_mockup_4.jpg" tag1="Web Dev" tag2="SaaS" />
+                <CaseStudyComponent text="Mobile App" link="/portfolio_3" imglink="/img/case_study_mockup_1.jpg" tag1="IOS" tag2="Android" />
+                <CaseStudyComponent text="Process Automation" link="/portfolio_4" imglink="/img/case_study_mockup_5.jpg" tag1="Automation" tag2="Scalability" />
             </div>
         </div>
     </section>

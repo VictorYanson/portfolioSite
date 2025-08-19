@@ -18,7 +18,7 @@
                     <p class="text-white text-center md:text-lg leading-relaxed pb-4 max-w-[420px]">
                         Feel free to contact me if having any questions. I'm available for new projects or just for chatting.
                     </p>
-                    <MainButton text="Book a free intro call" link="#"/>
+                    <MainButton text="Book a Free Intro Call" link="#"/>
                 </div>
             </div>
             <div class="flex w-full flex-col md:flex-row items-center justify-between gap-14 px-5">
