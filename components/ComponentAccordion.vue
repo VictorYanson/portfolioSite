@@ -52,51 +52,51 @@ onMounted(() => {
 
   <div class="accordion-group border-t border-[var(--color-black-25)]">
     <div class="accordion-menu">
-      <h3>What’s the difference between a subscription and a custom project?</ h3>
+      <h3>What kind of projects do you take on?</h3>
       <Icon class="toggle-icon" icon="bitcoin-icons:plus-filled" width="24" height="24" />
     </div>
     <div class="accordion-content">
-      <p>The subscription is ongoing and flexible — ideal for continuous design needs. Custom projects are one-time, fixed-scope engagements for larger goals like a rebrand or product launch.</p>  
+      <p>I focus on web development projects — from custom portfolio sites and e-commerce stores to MVPs for startups. I enjoy working with creative teams and founders to bring digital ideas to life through design, code, and strategy.</p>  
     </div>
   </div>
 
   <div class="accordion-group">
     <div class="accordion-menu">
-      <h3>How fast is the turnaround?</h3>
+      <h3>Do you work with specific tools or platforms?</h3>
       <Icon class="toggle-icon" icon="bitcoin-icons:plus-filled" width="24" height="24" />
     </div>
     <div class="accordion-content">
-      <p>Most requests are delivered within 1–2 business days. Larger tasks may take longer, but you’ll always be kept in the loop.</p>  
+      <p>Yes! I specialize in Webflow, Shopify (Liquid), and custom JavaScript-based stacks. I also build custom CMS structures, integrate APIs, and occasionally work on early-stage machine learning features.</p>  
     </div>
   </div>
 
   <div class="accordion-group">
     <div class="accordion-menu">
-      <h3>How many requests can I make?</h3>
+      <h3>Can you help with both design and development?</h3>
       <Icon class="toggle-icon" icon="bitcoin-icons:plus-filled" width="24" height="24" />
     </div>
     <div class="accordion-content">
-      <p>As many as you like — with a subscription, you can queue unlimited requests, and they’ll be handled one at a time in priority order.</p>  
+      <p>While my main focus is development, I often collaborate with design teams or work from existing brand guidelines. I can also support with layout structure, user flows, and basic UI/UX best practices when needed.</p>  
     </div>
   </div>
 
   <div class="accordion-group">
     <div class="accordion-menu">
-      <h3>What types of design do you handle?</h3>
+      <h3>How does your process usually work?</h3>
       <Icon class="toggle-icon" icon="bitcoin-icons:plus-filled" width="24" height="24" />
     </div>
     <div class="accordion-content">
-      <p>Websites, product UI, landing pages, brand assets, decks, social media visuals — anything digital that needs to look and feel sharp.</p>  
+      <p>I typically start by understanding the client's goals, then move into prototyping or wireframes. From there, I build in agile cycles with regular feedback loops. I also provide documentation or CMS training so clients can manage things after launch.</p>  
     </div>
   </div>
 
   <div class="accordion-group">
     <div class="accordion-menu">
-      <h3>What tools do you use?</h3>
+      <h3>Do you offer ongoing support or just one-time builds?</h3>
       <Icon class="toggle-icon" icon="bitcoin-icons:plus-filled" width="24" height="24" />
     </div>
     <div class="accordion-content">
-      <p>Figma for design, Notion for task management, and Slack or email for async communication.</p>  
+      <p>Both! I offer project-based packages, as well as retainer options for updates, maintenance, or scaling. We can discuss what works best depending on the scope and your team's needs</p>  
     </div>
   </div>
 
@@ -142,7 +142,7 @@ p {
 }
 
 h3 {
-    max-width: 400px;
+    max-width: 450px;
     font-size: 24px;
     font-family: 'inter', sans-serif;
     font-weight: 300;
