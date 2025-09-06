@@ -27,7 +27,7 @@ const props = defineProps({
     <div class="element-case-study h-full w-full flex-col items-center cursor-pointer">
         <a :href="link">
             <div class="aspect-[4/3] rounded-[25px] border border-gray-100 overflow-hidden mb-2">
-                <img class="transition-all duration-500" :src="imglink" alt="">
+                <img class="transition-all duration-500" :src="imglink" alt="" loading="lazy">
             </div>
             <div class="flex flex-row w-full justify-between items-center">
                 <p class="project-title text-gray-500 text-lg transition-colors duration-300">{{ text }}</p>

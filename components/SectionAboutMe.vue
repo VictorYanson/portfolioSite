@@ -35,7 +35,7 @@ onMounted(() => {
     <section class="flex justify-center">
         <div class="responsive-content flex-col gap-14 py-36 xl:px-0 px-6">
             <div class="flex flex-col items-center gap-y-2">
-                <h3 class="italic-heading">About Me</h3>
+                <h3><span class="italic-heading">About Me</span></h3>
                 <h2>Your Tech Wingman</h2>
             </div>
             <div class="flex flex-col md:h-[500px] md:flex-row items-center gap-16 z-20">
