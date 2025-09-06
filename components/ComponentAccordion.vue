@@ -56,7 +56,7 @@ onMounted(() => {
       <Icon class="toggle-icon" icon="bitcoin-icons:plus-filled" width="24" height="24" />
     </div>
     <div class="accordion-content">
-      <p>I focus on web development projects — from custom portfolio sites and e-commerce stores to MVPs for startups. I enjoy working with creative teams and founders to bring digital ideas to life through design, code, and strategy.</p>  
+      <p>I focus on web development projects from custom portfolio sites and e-commerce stores to MVPs for startups. I enjoy working with creative teams and founders to bring digital ideas to life through design, code, and strategy.</p>  
     </div>
   </div>
 

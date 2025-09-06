@@ -88,7 +88,7 @@ const handleToggle = () => {
                 <div class="flex flex-col w-full md:w-1/2 justify-between md:h-full rotate-[1deg]">
                     <div class="h-full w-full flex flex-col rounded-[15px] bg-white py-14 pl-14 pr-12">
                         <ComponentIncluded class="card-1" :class="{ 'h-auto opacity-1' : isVisible, 'h-0 opacity-0 pointer-events-none': !isVisible }"
-                            testimonial= "Victor's minimalist design approach transformed our brand. The simplicity and clarity he brought to our identity made us stand out in a crowded market."
+                            testimonial= "Victor's clean and efficient development approach brought our digital presence to life. It gave us a real edge in a crowded online market."
                             imgLink= "https://media.licdn.com/dms/image/v2/C4D03AQGgOWPSN_5ryw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1640281833202?e=1759968000&v=beta&t=dwsjjU6kuRWNzdFDLejMXr9pqIAdhMBlNuFO8xorcgc"
                             name= "Alejandro Navarro"
                             position= "Consultant at Técnicos365"
@@ -100,7 +100,7 @@ const handleToggle = () => {
                             benefit6= "1:1 Support"
                         />
                         <ComponentIncluded class="card-2" :class="{ 'h-0 opacity-0 pointer-events-none' : isVisible, 'h-auto opacity-1': !isVisible }"
-                            testimonial= "Effortless process. Exceptional results. Working with Victor felt like having an in-house designer on speed dial."
+                            testimonial= "The entire process felt seamless. Victor handled the build with such speed and precision. The final store worked flawlessly."
                             imgLink= "https://media.licdn.com/dms/image/v2/D4D03AQEYa0hiUVMnWA/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1727689597006?e=1759968000&v=beta&t=o-XwiH-chxO7SDNfIi6_Ein-lUHi3Az--pkHzf74mCs"
                             name= "Juliana Gonzalez"
                             position= "Marketing Specialist at Mini Hako"
