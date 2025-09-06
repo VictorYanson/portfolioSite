@@ -51,9 +51,9 @@ onMounted(() => {
                             <a href="https://github.com/VictorYanson">
                                 <Icon class="social-icon" width="20" icon="hugeicons:github" />
                             </a>
-                            <a href="">
+                            <!-- <a href="">
                                 <Icon class="social-icon" width="20" icon="hugeicons:instagram" />
-                            </a>
+                            </a> -->
                         </div>
                         <div class="flex flex-col items-end gap-y-2">
                             <p class="text-black text-base leading-none">Victor Yanson</p>

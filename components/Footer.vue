@@ -27,7 +27,7 @@
                     <ComponentSocialLogo link="mailto:victor.yanson@outlook.com" />
                     <ComponentSocialLogo link="https://www.linkedin.com/in/victor-yanson-a49940211/" icon="akar-icons:linkedin-v2-fill" />
                     <ComponentSocialLogo link="https://github.com/VictorYanson" icon="cuida:github-logo-outline"/>
-                    <ComponentSocialLogo icon="fe:instagram"/>
+                    <!-- <ComponentSocialLogo icon="fe:instagram"/> -->
                 </div>
             </div>
         </footer>
