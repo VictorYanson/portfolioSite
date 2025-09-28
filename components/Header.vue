@@ -102,17 +102,17 @@ onMounted(() => {
                 <p>FAQ</p>
             </button>
             <div class="buttons flex flex-row gap-x-3">
-                <a style="z-index: 1000; cursor: pointer;" href="#">
+                <a style="z-index: 1000; cursor: pointer;" href="mailto:victor.yanson@outlook.com">
                     <div class="social-button-dark rounded-full flex justify-center items-center p-2 border">
                         <Icon class="icon" icon="meteor-icons:at" width="20" height="20" style="color: black; transition: color 0.3s ease-in-out;" />
                     </div>
                 </a>
-                <a style="z-index: 1000; cursor: pointer;" href="#">
+                <a style="z-index: 1000; cursor: pointer;" href="https://github.com/VictorYanson/">
                     <div class="social-button-dark rounded-full flex justify-center items-center p-2 border">
                         <Icon class="icon" icon="cuida:github-logo-outline" width="20" height="20" style="color: black; transition: color 0.3s ease-in-out;" />
                     </div>
                 </a>
-                <a style="z-index: 1000; cursor: pointer;" href="#">
+                <a style="z-index: 1000; cursor: pointer;" href="https://www.linkedin.com/in/victor-yanson-a49940211/">
                     <div class="social-button-dark rounded-full flex justify-center items-center p-2 border">
                         <Icon class="icon" icon="akar-icons:linkedin-v2-fill" width="20" height="20" style="color: black; transition: color 0.3s ease-in-out;" />
                     </div>
