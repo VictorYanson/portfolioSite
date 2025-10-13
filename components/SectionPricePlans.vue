@@ -68,12 +68,12 @@ const handleToggle = () => {
                         </div>
                         <div class="flex flex-col">
                             <div id="monthly" class="toggle flex flex-row">
-                                <p id="price-mo" class="toggle text-5xl md:text-6xl text-black">€3,500</p>
-                                <p id="period-mo" class="toggle text-5xl md:text-6xl">/project</p>
+                                <p id="price-mo" class="toggle text-5xl md:text-6xl text-black">from</p>
+                                <p id="period-mo" class="toggle text-5xl md:text-6xl">€400</p>
                             </div>
                             <div id="yearly" class="toggle yearly flex flex-row gap-2">
-                                <p id="price-ye" class="toggle text-5xl md:text-6xl">from</p>
-                                <p id="period-ye" class="toggle text-5xl md:text-6xl text-black">€2,000</p>
+                                <p id="price-ye" class="toggle text-5xl md:text-6xl">€500</p>
+                                <p id="period-ye" class="toggle text-5xl md:text-6xl text-black">/project</p>
                             </div>
                         </div>
                     </div>
