@@ -1,3 +1,7 @@
+<script setup>
+const current_year = new Date().getFullYear()
+</script>
+
 <template>
     <section class="flex justify-center">
         <footer class="h-[97vh] md:w-[97vw] w-[93vw] rounded-[25px] flex flex-col justify-center items-center relative p-16 m-3 bg-black overflow-hidden">
@@ -22,7 +26,7 @@
                 </div>
             </div>
             <div class="flex w-full flex-col md:flex-row items-center justify-between gap-14 px-5">
-                <p class="text-white text-sm py-3 px-1 border-y border-white">© NullOne Labs, 2025</p>
+                <p class="text-white text-sm py-3 px-1 border-y border-white">© NullOne Labs, {{ current_year }}</p>
                 <div class="flex flex-row items-center gap-4">
                     <ComponentSocialLogo link="mailto:victor.yanson@outlook.com" />
                     <ComponentSocialLogo link="https://www.linkedin.com/in/victor-yanson-a49940211/" icon="akar-icons:linkedin-v2-fill" />
